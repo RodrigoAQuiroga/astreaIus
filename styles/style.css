@@ -1,0 +1,103 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+   
+   margin: 0;
+
+}
+body{
+    background-color: #F0E9D2;
+    color: #181D31;
+    
+    
+}
+
+a {
+    background-color: coral;
+    color: black;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+#menu{
+    background-color: coral;
+}
+summary {
+    cursor: pointer;
+    list-style-type: none;
+    width: 100%;
+    background-color: #678983;
+    padding: 5px; 
+    font-weight: bolder;
+    text-align: center;
+}
+
+summary:hover {
+    background-color: coral;
+}
+
+a:hover {
+    background-color: orangered;
+}
+
+a:focus {
+    background-color: orangered;
+}
+
+iframe {
+    width: 100%;
+    height: 80vh;
+    background-image: url(DepedJca1.png);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+   
+
+}
+
+#menu:hover{
+    background-color: orangered;
+}
+
+h1, h2 {
+    text-align: center;
+
+}
+
+
+details{
+    background-color: #55756e;
+}
+footer{
+    
+    background-color: #678983;
+    
+    width: 100%;
+    left: 0;
+    color: #181D31;
+    font-weight: bolder;
+    cursor: pointer;
+    
+}
+#inicio{
+    background-color: transparent;
+    margin: 1px;
+    padding: 1px;
+    width: 100%;
+   
+}
+main{
+    padding: 5px;
+    
+}
+header{
+    background-color: #678983;
+    padding: 3px;
+    color: black
+}
+
+a:link{
+    text-decoration: none;
+}
