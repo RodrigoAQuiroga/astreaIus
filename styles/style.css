@@ -23,6 +23,7 @@ a {
 }
 #menu{
     background-color: coral;
+    font-size: larger;
 }
 summary {
     cursor: pointer;
