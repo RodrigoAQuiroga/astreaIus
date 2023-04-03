@@ -25,11 +25,11 @@
         <details id="myDetails">
           <summary id="menu">☰ Menú Principal</summary>
           <details>
-            <summary onclick="closeDetails()" > <a href="res/about.html" target="myframe" id="inicio">Inicio</a></summary>
+            <summary onclick="closeDetails()" > <a href="res/about.html" target="myframe" id="inicio">⌂ Inicio</a></summary>
            
           </details>
-      <details>
-          <summary>⚖️ Legislación Editada ⚖️</summary>
+      <details id="mySummary">
+          <summary onclick="closeSummary1()">❯ Legislación Editada 🔍︎</summary>
           <a href="res/ccyc.html" target="myframe" onclick="closeDetails()">Código Civil y Comercial</a>
           <a href="res/cpcmdz.html" target="myframe" onclick="closeDetails()">Código Procesal Civil, Comercial y Tributario de Mendoza</a>
           <a href="res/concursos.html" target="myframe" onclick="closeDetails()">Ley de Concursos y Quiebras</a>
@@ -39,13 +39,14 @@
           <a href="res/lct.html" target="myframe" onclick="closeDetails()">Ley de Contrato de Trabajo</a>
       </details>
 
-      <details>
-          <summary>📚 Doctrina 📚</summary>
+      <details id="mySummary1">
+          <summary onclick="closeSummary()">❯ Doctrina 🔍︎</summary>
           <a href="https://drive.google.com/file/d/14ALDCoDZWr0Lm-BlaxhmnpeRS2MeBjFq/preview" target="myframe" onclick="closeDetails()">Defraudaciones: Código Penal Nacional</a>
           <a href="https://drive.google.com/file/d/1oKdZQkvOXkWmhrU34gAvt2Ekn_0ncoIJ/preview" target="myframe" onclick="closeDetails()">Homicidio: Código Penal Nacional</a>
           <a href="https://drive.google.com/file/d/1q0Ah2P3CvcX9f7xQKb02gqOwChNsM5kO/preview" target="myframe" onclick="closeDetails()">Ensayo de Respuesta al Delito: Investigación</a>
           <a href="https://drive.google.com/file/d/1i8xF9AFIhN2lA9e7CQmIlpyzm9srZhqN/preview" target="myframe" onclick="closeDetails()">Crítica al Sistema Penal: Investigación</a>
           <a href="https://drive.google.com/file/d/1dXAn-d2mggsQo0XtRyLFPhkMhTqPPApA/preview" target="myframe" onclick="closeDetails()">Esquema de imputación: Investigación</a>
+          <a href="res/dpnc.html" target="myframe" onclick="closeDetails()">Derecho Pena Neurocriminal: Reflexión</a>
       </details>
       
   </details>
