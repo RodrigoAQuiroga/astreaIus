@@ -58,6 +58,10 @@ iframe {
 
 }
 
+hr{
+    color: #F0E9D2;
+}
+
 #menu:hover{
     background-color: orangered;
 }
