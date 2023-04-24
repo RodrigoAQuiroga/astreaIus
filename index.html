@@ -104,6 +104,14 @@
         .buscador {
             text-align: center;
         }
+
+        #presentacion{
+            text-align: center;
+        }
+        #logo{
+            width: 20%;
+            height: 20%;
+        }
     </style>
 
 
@@ -120,7 +128,8 @@
         <button class="botonMostrar" id="show" onclick="mostrar('indice', 'show')">☰ ♍︎ astreaIus : codex_Lex</button>
 
         <div id="indice">
-            <a href="#" id="codCivil" onclick="showCCyC()">Código Civil</a>            
+            <a href="#" onclick="showPresent()">Inicio</a>
+            <a href="#" onclick="showCCyC()">Código Civil</a>            
             <a href="#" onclick="showConcursal()">Ley Concursos y Quiebras</a>
             <a href="#" onclick="showCPCT()">CPCCT de Mendoza</a>            
         </div>
@@ -128,6 +137,14 @@
 
 
     <div class="contenido">
+
+        <div id="presentacion">
+            <h1>Bienvenido a ♍︎ astreaIus : codex_Lex</h1>
+            <h2>Repositorio oficial de leyes y doctrina</h2>
+            <p><b> Para mostrar u ocultar las opciones presione el botón que se encuentra en la barra inferior. Espero que sea de utilidad.</b></p>           
+            <p><i>Ver.24.4.23.2</i></p>
+            <img src="res/DepedJca1.png" alt="Logo del IIJC" id="logo">
+        </div>
 
         <div class="lex" id="codigoCivil">
 
@@ -54265,15 +54282,18 @@ console.log(number);
             let codCivil = document.getElementById("ccyc");
             let codPrMdz = document.getElementById("cpcmdz");
             let concursos = document.getElementById("concursal")
+            let present = document.getElementById("presentacion")
 
             if (codCivil.style.display === "block") {
                 codCivil.style.display = "none"
                 codPrMdz.style.display = "none"
                 concursos.style.display = "none"
+                present.style.display = "none"
             } else {
                 codCivil.style.display = "block"
                 codPrMdz.style.display = "none"
                 concursos.style.display = "none"
+                present.style.display = "none"
             }
 
         }
@@ -54282,15 +54302,18 @@ console.log(number);
             let codCivil = document.getElementById("ccyc");
             let codPrMdz = document.getElementById("cpcmdz");
             let concursos = document.getElementById("concursal")
+            let present = document.getElementById("presentacion")
 
             if (codPrMdz.style.display === "block") {
                 codCivil.style.display = "none"
                 codPrMdz.style.display = "none"
                 concursos.style.display = "none"
+                present.style.display = "none"
             } else {
                 codCivil.style.display = "none"
                 codPrMdz.style.display = "block"
                 concursos.style.display = "none"
+                present.style.display = "none"
             }
 
         }
@@ -54299,16 +54322,39 @@ console.log(number);
         function showConcursal() {
             let codCivil = document.getElementById("ccyc");
             let codPrMdz = document.getElementById("cpcmdz");
-            let concursos = document.getElementById("concursal")
+            let concursos = document.getElementById("concursal");
+            let present = document.getElementById("presentacion")
 
             if (concursos.style.display === "block") {
                 codCivil.style.display = "none"
                 codPrMdz.style.display = "none"
                 concursos.style.display = "none"
+                present.style.display = "none"
             } else {
                 codCivil.style.display = "none"
                 codPrMdz.style.display = "none"
                 concursos.style.display = "block"
+                present.style.display = "none"
+            }
+
+        }
+
+        function showPresent() {
+            let codCivil = document.getElementById("ccyc");
+            let codPrMdz = document.getElementById("cpcmdz");
+            let concursos = document.getElementById("concursal");
+            let present = document.getElementById("presentacion")
+
+            if (present.style.display === "block") {
+                codCivil.style.display = "none"
+                codPrMdz.style.display = "none"
+                concursos.style.display = "none"
+                present.style.display = "block"
+            } else {
+                codCivil.style.display = "none"
+                codPrMdz.style.display = "none"
+                concursos.style.display = "none"
+                present.style.display = "block"
             }
 
         }
