@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F3F5FC;
+}
+
+#confirmar {
+    padding: 10px;
+
+
+}
+
+.lex {
+    margin-bottom: 10em;
+
+}
+
+
+a,
+button,
+summary {
+    padding: 5px 8px;
+    background-color: #0A3871;
+    border-radius: 5px;
+    margin: 5px;
+    display: inline-grid;
+    color: #F3F5FC;
+    text-decoration: none;
+    border-width: none;
+    border-style: none;
+    cursor: pointer;
+}
+
+input {
+    background-color: #E9ECF8;
+    border-style: none;
+    padding: 10px;
+}
+
+.index {
+    position: fixed;
+    bottom: 0;
+    background-color: #757FB2;
+    padding: 10px;
+    width: 100%;
+    left: 0;
+    text-align: right;
+}
+
+
+
+.found {
+    font-weight: bolder;
+    background-color: #AAB2D5;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#indice {
+    display: none;
+
+}
+
+
+.botonMostrar {
+    background-color: #072B61;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px 20px;
+}
+
+#link,
+#linkCpc,
+#linkConcursos {
+    display: block;
+    background-color: #052051;
+    text-align: center;
+
+}
+
+.buscador {
+    text-align: center;
+}
+
+#presentacion {
+    text-align: center;
+}
+
+#logo {
+    width: 20%;
+    height: 20%;
+}
