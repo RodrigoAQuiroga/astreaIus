@@ -13,7 +13,7 @@ body {
 
 }
 
-.lex {
+main{
     margin-bottom: 10em;
 
 }
@@ -39,19 +39,24 @@ input {
     border-style: none;
     padding: 10px;
 }
-
+.top{
+    padding: 10px;
+    background-color: #072B61;
+}
 .index {
     position: fixed;
     bottom: 0;
     background-color: #757FB2;
     padding: 10px;
-    width: 100%;
-    left: 0;
+   border-radius: 5px;
+    right: 0;
     text-align: right;
 }
 
 
-
+input{
+    font-weight: bold;
+}
 .found {
     font-weight: bolder;
     background-color: #AAB2D5;
