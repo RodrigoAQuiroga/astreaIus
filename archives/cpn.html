@@ -16,7 +16,7 @@
   <nav class="index">
 
     <button class="botonMostrar" id="show" onclick="mostrar('indice', 'show')">☰  astreaIus : codex_Lex</button>
-    <a href="#cpcmdz" class="top">Volver al principio</a>
+    <a href="#inicio" class="top">Volver al principio</a>
 
     <div id="indice">
         <a href="/index.html">Inicio</a>
@@ -27,13 +27,19 @@
     </div>
 
 </nav>
-  
+  <main id="inicio">
   <h2 style="text-align: center;"><b>CODIGO PENAL DE LA NACION ARGENTINA</b></h2>
   <p style="text-align: center;"><b>LEY 11.179</b></p>
 
   <p style="text-align: center;"><b>(T.O. 1984 actualizado)</b></p>
 
+  <div class="buscador">
 
+    <input type="number" name="" class="buscar" id="btnBuscar" placeholder="Ingrese numero del art."
+       >
+    <button onclick="buscar()" id="confirmar">¿Confirmar?</button>
+    <a id="link">Ingrese el numero del artículo a buscar</a>
+</div>
   <details>
     <summary>Indice</summary>
 
@@ -108,7 +114,7 @@
 
   <p style="text-align: center;"><b>APLICACION DE LA LEY PENAL</b></p>
 
-  <p>ARTICULO 1º.- Este Código se aplicará:</p>
+  <p id="art">ARTICULO 1º.- Este Código se aplicará:</p>
 
   <p>
     1) Por delitos cometidos o cuyos efectos deban producirse en el territorio de
@@ -133,7 +139,7 @@
     República Argentina)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 2º.- Si la ley vigente al tiempo de cometerse el delito fuere
     distinta de la que exista al pronunciarse el fallo o en el tiempo intermedio,
     se aplicará siempre la más benigna.
@@ -145,12 +151,12 @@
     de la nueva ley se operarán de pleno derecho.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 3º.- En el cómputo de la prisión preventiva se observará
     separadamente la ley más favorable al procesado.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 4º.- Las disposiciones generales del presente código se aplicarán a
     todos los delitos previstos por leyes especiales, en cuanto éstas no
     dispusieran lo contrario.
@@ -160,36 +166,36 @@
 
   <p style="text-align: center;"><b>DE LAS PENAS</b></p>
 
-  <p>
+  <p id="art">
     ARTICULO 5º.- Las penas que este Código establece son las siguientes:
     reclusión, prisión, multa e inhabilitación.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 6º.- La pena de reclusión, perpetua o temporal, se cumplirá con
     trabajo obligatorio en los establecimientos destinados al efecto. Los
     recluidos podrán ser empleados en obras públicas de cualquier clase con tal
     que no fueren contratadas por particulares.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 7º.- Los hombres débiles o enfermos y los mayores de sesenta años que
     merecieren reclusión, sufrirán la condena en prisión, no debiendo ser
     sometidos sino a la clase de trabajo especial que determine la dirección del
     establecimiento.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 8º.- Los menores de edad y las mujeres sufrirán las condenas en
     establecimientos especiales.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 9º.- La pena de prisión, perpetua o temporal, se cumplirá con trabajo
     obligatorio, en establecimientos distintos de los destinados a los recluidos.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 10.- Podrán, a criterio del juez competente, cumplir la pena de
     reclusión o prisión en detención domiciliaria:
   </p>
@@ -219,7 +225,7 @@
 
   <p>(Artículo sustituido por art. 4° de la Ley N° 26.472, B.O. 20/1/2009)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 11.- El producto del trabajo del condenado a reclusión o prisión se
     aplicará simultáneamente:
   </p>
@@ -235,7 +241,7 @@
 
   <p>4º. A formar un fondo propio, que se le entregará a su salida.</p>
 
-  <p>
+  <p id="art">
     ARTICULO 12.- La reclusión y la prisión por más de tres años llevan como
     inherente la inhabilitación absoluta, por el tiempo de la condena, la que
     podrá durar hasta tres años más, si así lo resuelve el tribunal, de acuerdo
@@ -245,7 +251,7 @@
     curatela establecida por el Código Civil para los incapaces.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 13.- El condenado a reclusión o prisión perpetua que hubiere cumplido
     treinta y cinco (35) años de condena, el condenado a reclusión o a prisión por
     más de tres (3) años que hubiere cumplido los dos tercios, y el condenado a
@@ -291,7 +297,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 25.892 B.O.26/5/2004)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 14 — La libertad condicional no se concederá a los reincidentes.
     Tampoco se concederá cuando la condena fuera por:
   </p>
@@ -343,7 +349,7 @@
 
   <p>(Artículo sustituido por art. 38 de la Ley N° 27.375 B.O.28/07/2017)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 15.- La libertad condicional será revocada cuando el penado cometiere
     un nuevo delito o violare la obligación de residencia. En estos casos no se
     computará, en el término de la pena, el tiempo que haya durado la libertad.
@@ -357,26 +363,26 @@
     25.892 B.O.26/5/2004)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 16.- Transcurrido el término de la condena, o el plazo de cinco años
     señalado en el artículo 13 sin que la libertad condicional haya sido revocada,
     la pena quedará extinguida, lo mismo que la inhabilitación absoluta del
     artículo 12.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 17.- Ningún penado cuya libertad condicional haya sido revocada,
     podrá obtenerla nuevamente.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 18.- Los condenados por tribunales provinciales a reclusión o prisión
     por más de cinco años serán admitidos en los respectivos establecimientos
     nacionales. Las provincias podrán mandarlos siempre que no tuvieren
     establecimientos adecuados.
   </p>
 
-  <p>ARTICULO 19.- La inhabilitación absoluta importa:</p>
+  <p id="art">ARTICULO 19.- La inhabilitación absoluta importa:</p>
 
   <p>
     1º. La privación del empleo o cargo público que ejercía el penado aunque
@@ -401,7 +407,7 @@
     indemnizaciones fijadas.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 20.- La inhabilitación especial producirá la privación del empleo,
     cargo, profesión o derecho sobre que recayere y la incapacidad para obtener
     otro del mismo género durante la condena. La inhabilitación especial para
@@ -462,7 +468,7 @@
     libertad.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 21.- La multa obligará al reo a pagar la cantidad de dinero que
     determinare la sentencia, teniendo en cuenta además de las causas generales
     del artículo 40, la situación económica del penado.
@@ -487,7 +493,7 @@
     del condenado.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 22.- En cualquier tiempo que se satisfaciera la multa, el reo quedará
     en libertad.
   </p>
@@ -510,7 +516,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 23.- En todos los casos en que recayese condena por delitos previstos
     en este Código o en leyes penales especiales, la misma decidirá el decomiso de
     las cosas que han servido para cometer el hecho y de las cosas o ganancias que
@@ -595,7 +601,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 25.815 B.O.1/12/2003)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 24.- La prisión preventiva se computará así: por dos días de prisión
     preventiva, uno de reclusión; por un día de prisión preventiva, uno de prisión
     o dos de inhabilitación o la cantidad de multa que el tribunal fijase entre
@@ -607,7 +613,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 25.- Si durante la condena el penado se volviere loco, el tiempo de
     la locura se computará para el cumplimiento de la pena, sin que ello obste a
     lo dispuesto en el apartado tercero del inciso 1º del artículo 34.
@@ -617,7 +623,7 @@
 
   <p style="text-align: center;"><b>CONDENACION CONDICIONAL</b></p>
 
-  <p>
+  <p id="art">
     ARTICULO 26.- En los casos de primera condena a pena de prisión que no exceda
     de tres años, será facultad de los tribunales disponer en el mismo
     pronunciamiento que se deje en suspenso el cumplimiento de la pena. Esta
@@ -639,7 +645,7 @@
     inhabilitación.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 27.- La condenación se tendrá como no pronunciada si dentro del
     término de cuatro años, contados a partir de la fecha de la sentencia firme,
     el condenado no cometiere un nuevo delito. Si cometiere un nuevo delito,
@@ -712,7 +718,7 @@
 
   <p>(Artículo incorporado por art. 1° de la Ley N° 24.316 B.O. 19/5/1994)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 28.- La suspensión de la pena no comprenderá la reparación de los
     daños causados por el delito y el pago de los gastos del juicio.
   </p>
@@ -721,7 +727,7 @@
 
   <p style="text-align: center;"><b>REPARACION DE PERJUICIOS</b></p>
 
-  <p>ARTICULO 29.- La sentencia condenatoria podrá ordenar:</p>
+  <p id="art">ARTICULO 29.- La sentencia condenatoria podrá ordenar:</p>
 
   <p>
     1. La reposición al estado anterior a la comisión del delito, en cuanto sea
@@ -738,7 +744,7 @@
 
   <p>(Artículo sustituido por art. 27 de la Ley N° 25.188 B.O. 1/11/1999.)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 30.- La obligación de indemnizar es preferente a todas las que
     contrajere el responsable después de cometido el delito, a la ejecución de la
     pena de decomiso del producto o el provecho del delito y al pago de la multa.
@@ -756,18 +762,18 @@
 
   <p>(Artículo sustituido por art. 28 de la Ley N° 25.188 B.O. 1/11/1999.)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 31.- La obligación de reparar el daño es solidaria entre todos los
     responsables del delito.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 32.- El que por título lucrativo participare de los efectos de un
     delito, estará obligado a la reparación hasta la cuantía en que hubiere
     participado.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 33.- En caso de insolvencia total o parcial, se observarán las reglas
     siguientes:
   </p>
@@ -787,7 +793,7 @@
 
   <p style="text-align: center;"><b>IMPUTABILIDAD</b></p>
 
-  <p>ARTICULO 34.- No son punibles:</p>
+  <p id="art">ARTICULO 34.- No son punibles:</p>
 
   <p>
     1º. El que no haya podido en el momento del hecho, ya sea por insuficiencia de
@@ -857,28 +863,28 @@
     participado en ella el tercero defensor.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 35.- El que hubiere excedido los límites impuestos por la Ley, por la
     autoridad o por la necesidad, será castigado con la pena fijada para el delito
     por culpa o imprudencia.
   </p>
 
-  <p>ARTICULO 36.- Derogado.</p>
+  <p id="art">ARTICULO 36.- Derogado.</p>
 
-  <p>ARTICULO 37.- Derogado.</p>
+  <p id="art">ARTICULO 37.- Derogado.</p>
 
-  <p>ARTICULO 38.- Derogado.</p>
+  <p id="art">ARTICULO 38.- Derogado.</p>
 
-  <p>ARTICULO 39.- Derogado.</p>
+  <p id="art">ARTICULO 39.- Derogado.</p>
 
-  <p>
+  <p id="art">
     ARTICULO 40.- En las penas divisibles por razón de tiempo o de cantidad, los
     tribunales fijarán la condenación de acuerdo con las circunstancias atenuantes
     o agravantes particulares a cada caso y de conformidad a las reglas del
     artículo siguiente.
   </p>
 
-  <p>ARTICULO 41.- A los efectos del artículo anterior, se tendrá en cuenta:</p>
+  <p id="art">ARTICULO 41.- A los efectos del artículo anterior, se tendrá en cuenta:</p>
 
   <p>
     1º. La naturaleza de la acción y de los medios empleados para ejecutarla y la
@@ -1021,18 +1027,18 @@
 
   <p style="text-align: center;"><b>TENTATIVA</b></p>
 
-  <p>
+  <p id="art">
     ARTICULO 42.- El que con el fin de cometer un delito determinado comienza su
     ejecución, pero no lo consuma por circunstancias ajenas a su voluntad, sufrirá
     las penas determinadas en el artículo 44.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 43.- El autor de tentativa no estará sujeto a pena cuando desistiere
     voluntariamente del delito.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 44.- La pena que correspondería al agente, si hubiere consumado el
     delito, se disminuirá de un tercio a la mitad.
   </p>
@@ -1053,14 +1059,14 @@
 
   <p style="text-align: center;"><b>PARTICIPACION CRIMINAL</b></p>
 
-  <p>
+  <p id="art">
     ARTICULO 45.- Los que tomasen parte en la ejecución del hecho o prestasen al
     autor o autores un auxilio o cooperación sin los cuales no habría podido
     cometerse, tendrán la pena establecida para el delito. En la misma pena
     incurrirán los que hubiesen determinado directamente a otro a cometerlo.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 46.- Los que cooperen de cualquier otro modo a la ejecución del hecho
     y los que presten una ayuda posterior cumpliendo promesas anteriores al mismo,
     serán reprimidos con la pena correspondiente al delito, disminuida de un
@@ -1069,7 +1075,7 @@
     prisión de diez a quince años.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 47.- Si de las circunstancias particulares de la causa resultare que
     el acusado de complicidad no quiso cooperar sino en un hecho menos grave que
     el cometido por el autor, la pena será aplicada al cómplice solamente en razón
@@ -1081,7 +1087,7 @@
     los preceptos de este artículo y a los del título de la tentativa.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 48.- Las relaciones, circunstancias y calidades personales, cuyo
     efecto sea disminuir o excluir la penalidad, no tendrán influencia sino
     respecto al autor o cómplice a quienes correspondan. Tampoco tendrán
@@ -1089,7 +1095,7 @@
     fueren conocidas por el partícipe.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 49.- No se considerarán partícipes de los delitos cometidos por la
     prensa a las personas que solamente prestaren al autor del escrito o grabado
     la cooperación material necesaria para su publicación, difusión o venta.
@@ -1099,7 +1105,7 @@
 
   <p style="text-align: center;"><b>REINCIDENCIA</b></p>
 
-  <p>
+  <p id="art">
     ARTICULO 50.- Habrá reincidencia siempre que quien hubiera cumplido, total o
     parcialmente, pena privativa de libertad impuesta por un tribunal del país
     cometiere un nuevo delito punible también con esa clase de pena.
@@ -1120,7 +1126,7 @@
     nunca excederá de diez ni será inferior a cinco años.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 51.- Todo ente oficial que lleve registros penales se abstendrá de
     informar sobre datos de un proceso terminado por sobreseimiento o sentencia
     absolutoria. En ningún caso se informará la existencia de detenciones que no
@@ -1183,7 +1189,7 @@
     delito más severamente penado.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 52.- Se impondrá reclusión por tiempo indeterminado como accesoria de
     la última condena, cuando la reincidencia fuere múltiple en forma tal que
     mediaren las siguientes penas anteriores:
@@ -1202,7 +1208,7 @@
     en el artículo 26.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 53.- En los casos del artículo anterior, transcurridos cinco años del
     cumplimiento de la reclusión accesoria, el tribunal que hubiera dictado la
     última condena o impuesto la pena única estará facultado para otorgarle la
@@ -1232,12 +1238,12 @@
 
   <p style="text-align: center;"><b>CONCURSO DE DELITOS</b></p>
 
-  <p>
+  <p id="art">
     ARTICULO 54.- Cuando un hecho cayere bajo más de una sanción penal, se
     aplicará solamente la que fijare pena mayor.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 55.- Cuando concurrieren varios hechos independientes reprimidos con
     una misma especie de pena, la pena aplicable al reo tendrá como mínimo, el
     mínimo mayor y como máximo, la suma aritmética de las penas máximas
@@ -1251,7 +1257,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 25.928 B.O. 10/9/2004)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 56.- Cuando concurrieren varios hechos independientes reprimidos con
     penas divisibles de reclusión o prisión se aplicará la pena más grave,
     teniendo en cuenta los delitos de pena menor.
@@ -1264,13 +1270,13 @@
     aplicarán siempre, sin sujeción a lo dispuesto en el párrafo primero.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 57.- A los efectos del artículo anterior, la gravedad relativa de las
     penas de diferente naturaleza se determinará por el orden en que se hallan
     enumeradas en el artículo 5º.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 58.- Las reglas precedentes se aplicarán también en el caso en que
     después de una condena pronunciada por sentencia firme se deba juzgar a la
     misma persona que esté cumpliendo pena por otro hecho distinto; o cuando se
@@ -1290,7 +1296,7 @@
 
   <p style="text-align: center;"><b>EXTINCION DE ACCIONES Y DE PENAS</b></p>
 
-  <p>ARTICULO 59.- La acción penal se extinguirá:</p>
+  <p id="art">ARTICULO 59.- La acción penal se extinguirá:</p>
 
   <p>1) Por la muerte del imputado;</p>
 
@@ -1319,18 +1325,18 @@
   </p>
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 27.147 B.O. 18/06/2015)</p>
-  <p>
+  <p id="art">
     ARTICULO 60.- La renuncia de la persona ofendida al ejercicio de la acción
     penal sólo perjudicará al renunciante y a sus herederos.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 61.- La amnistía extinguirá la acción penal y hará cesar la condena y
     todos sus efectos, con excepción de las indemnizaciones debidas a
     particulares.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 62.- La acción penal se prescribirá durante el tiempo fijado a
     continuación:
   </p>
@@ -1359,7 +1365,7 @@
 
   <p>5º. A los dos años, cuando se tratare de hechos reprimidos con multa.</p>
 
-  <p>
+  <p id="art">
     ARTICULO 63.- La prescripción de la acción empezará a correr desde la
     medianoche del día en que se cometió el delito o, si éste fuese continuo, en
     que cesó de cometerse.
@@ -1370,7 +1376,7 @@
     10/11/2015)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 64.- La acción penal por delito reprimido con multa se extinguirá en
     cualquier estado de la instrucción y mientras no se haya iniciado el juicio,
     por el pago voluntario del mínimo de la multa correspondiente y la reparación
@@ -1396,7 +1402,7 @@
 
   <p>(Artículo sustituido por art. 6° de la Ley Nº 24.316 B.O. 19/5/1994)</p>
 
-  <p>ARTICULO 65.- Las penas se prescriben en los términos siguientes:</p>
+  <p id="art">ARTICULO 65.- Las penas se prescriben en los términos siguientes:</p>
 
   <p>1º. La de reclusión perpetua, a los veinte años;</p>
 
@@ -1408,13 +1414,13 @@
 
   <p>4º. La de multa, a los dos años.</p>
 
-  <p>
+  <p id="art">
     ARTICULO 66.- La prescripción de la pena empezará a correr desde la medianoche
     del día en que se notificare al reo la sentencia firme o desde el
     quebrantamiento de la condena, si ésta hubiese empezado a cumplirse.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 67.- La prescripción se suspende en los casos de los delitos para
     cuyo juzgamiento sea necesaria la resolución de cuestiones previas o
     prejudiciales, que deban ser resueltas en otro juicio. Terminada la causa de
@@ -1477,12 +1483,12 @@
 
   <p>(Artículo sustituido por art. 2° de la Ley N° 27.206 B.O. 10/11/2015)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 68.- El indulto del reo extinguirá la pena y sus efectos, con
     excepción de las indemnizaciones debidas a particulares.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 69.- El perdón de la parte ofendida extinguirá la pena impuesta por
     delito de los enumerados en el artículo 73.
   </p>
@@ -1492,7 +1498,7 @@
     los demás.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 70.- Las indemnizaciones pecuniarias inherentes a las penas, podrán
     hacerse efectivas sobre los bienes propios del condenado, aun después de
     muerto.
@@ -1502,7 +1508,7 @@
 
   <p style="text-align: center;"><b>DEL EJERCICIO DE LAS ACCIONES</b></p>
 
-  <p>
+  <p id="art">
     ARTICULO 71.- Sin perjuicio de las reglas de disponibilidad de la acción penal
     previstas en la legislación procesal, deberán iniciarse de oficio todas las
     acciones penales, con excepción de las siguientes:
@@ -1514,7 +1520,7 @@
 
   <p>(Artículo sustituido por art. 2° de la Ley N° 27.147 B.O. 18/06/2015)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 72.- Son acciones dependientes de instancia privada las que nacen de
     los siguientes delitos:
   </p>
@@ -1557,7 +1563,7 @@
   </p>
 
   <p>(Artículo sustituido por Ley N° 27.455 B.O. 25/10/2018)</p>
-  <p>
+  <p id="art">
     ARTICULO 73.- Son acciones privadas las que nacen de los siguientes delitos:
   </p>
 
@@ -1591,11 +1597,11 @@
 
   <p>(Artículo sustituido por art. 3° de la Ley N° 27.147 B.O. 18/06/2015)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 74.- (Artículo derogado por art. 2° de la Ley N°24.453 B.O. 7/3/1995)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 75.- (Artículo derogado por art. 5° de la Ley N° 27.147 B.O.
     18/06/2015)
   </p>
@@ -1608,7 +1614,7 @@
 
   <p style="text-align: center;"><b>De la suspensión del juicio a prueba</b></p>
 
-  <p>
+  <p id="art">
     ARTICULO 76.- La suspensión del juicio a prueba se regirá de conformidad con
     lo previsto en las leyes procesales correspondientes. Ante la falta de
     regulación total o parcial, se aplicarán las disposiciones de este Título.
@@ -1738,7 +1744,7 @@
     <b>SIGNIFICACION DE CONCEPTOS EMPLEADOS EN EL CODIGO</b>
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 77.- Para la inteligencia del texto de este código se tendrán
     presente las siguientes reglas:
   </p>
@@ -1828,7 +1834,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 26.733 B.O. 28/12/2011)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 78.- Queda comprendido en el concepto de "violencia", el uso de
     medios hipnóticos o narcóticos.
   </p>
@@ -1850,12 +1856,12 @@
 
   <p>Delitos contra la vida</p>
 
-  <p>
+  <p id="art">
     ARTICULO 79. - Se aplicará reclusión o prisión de ocho a veinticinco años, al
     que matare a otro siempre que en este código no se estableciere otra pena.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 80. - Se impondrá reclusión perpetua o prisión perpetua, pudiendo
     aplicarse lo dispuesto en el artículo 52, al que matare:
   </p>
@@ -1927,7 +1933,7 @@
     sustituido por art. 3° de la Ley N° 26.791 B.O. 14/12/2012)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 81. - 1º Se impondrá reclusión de tres a seis años, o prisión de uno
     a tres años:
   </p>
@@ -1945,19 +1951,19 @@
 
   <p>2º (Inciso derogado por art. 1° de la Ley N° 24.410 B.O. 2/1/1995)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 82. - Cuando en el caso del inciso 1º del artículo 80 concurriese
     alguna de las circunstancias del inciso 1º del artículo anterior, la pena será
     de reclusión o prisión de diez a veinticinco años.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 83. - Será reprimido con prisión de uno a cuatro años, el que
     instigare a otro al suicidio o le ayudare a cometerlo, si el suicidio se
     hubiese tentado o consumado.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 84. - Será reprimido con prisión de uno (1) a cinco (5) años e
     inhabilitación especial, en su caso, por cinco (5) a diez (10) años el que por
     imprudencia, negligencia, impericia en su arte o profesión o inobservancia de
@@ -1996,7 +2002,7 @@
 
   <p>(Artículo incorporado por art. 2° de la Ley N° 27.347 B.O. 6/1/2017).</p>
 
-  <p>ARTICULO 85. - El o la que causare un aborto será reprimido:</p>
+  <p id="art">ARTICULO 85. - El o la que causare un aborto será reprimido:</p>
 
   <p>
     1. Con prisión de tres (3) a diez (10) años, si obrare sin consentimiento de
@@ -2023,7 +2029,7 @@
 
   <p>(Artículo incorporado por art. 15 de la Ley N° 27.610 B.O. 15/01/2021)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 86. - No es delito el aborto realizado con consentimiento de la
     persona gestante hasta la semana catorce (14) inclusive del proceso
     gestacional.
@@ -2055,7 +2061,7 @@
     Decreto Nº 14/2021 B.O. 15/01/2021)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 87. - Será reprimido o reprimida con prisión de seis (6) meses a tres
     (3) años, el o la que con violencia causare un aborto sin haber tenido el
     propósito de causarlo, si el estado del embarazo de la persona gestante fuere
@@ -2064,7 +2070,7 @@
 
   <p>(Artículo sustituido por art. 17 de la Ley N° 27.610 B.O. 15/01/2021)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 88. - Será reprimida con prisión de tres (3) meses a un (1) año, la
     persona gestante que, luego de la semana catorce (14) de gestación y siempre
     que no mediaren los supuestos previstos en el artículo 86, causare su propio
@@ -2080,13 +2086,13 @@
 
   <p>Lesiones</p>
 
-  <p>
+  <p id="art">
     ARTICULO 89. - Se impondrá prisión de un mes a un año, al que causare a otro,
     en el cuerpo o en la salud, un daño que no esté previsto en otra disposición
     de este código.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 90. - Se impondrá reclusión o prisión de uno a seis años, si la
     lesión produjere una debilitación permanente de la salud, de un sentido, de un
     órgano, de un miembro o una dificultad permanente de la palabra o si hubiere
@@ -2094,7 +2100,7 @@
     por más de un mes o le hubiere causado una deformación permanente del rostro.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 91. - Se impondrá reclusión o prisión de tres a diez años, si la
     lesión produjere una enfermedad mental o corporal, cierta o probablemente
     incurable, la inutilidad permanente para el trabajo, la pérdida de un sentido,
@@ -2102,21 +2108,21 @@
     de la capacidad de engendrar o concebir.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 92. - Si concurriere alguna de las circunstancias enumeradas en el
     artículo 80, la pena será: en el caso del artículo 89, de seis meses a dos
     años; en el caso del artículo 90, de tres a diez años; y en el caso del
     artículo 91, de tres a quince años.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 93. - Si concurriere la circunstancia enunciada en el inciso 1º letra
     a) del artículo 81, la pena será: en el caso del artículo 89, de quince días a
     seis meses; en el caso del artículo 90, de seis meses a tres años; y en el
     caso del artículo 91, de uno a cuatro años.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 94. - Se impondrá prisión de un (1) mes a tres (3) años o multa de
     mil (1.000) a quince mil (15.000) pesos e inhabilitación especial por uno (1)
     a cuatro (4) años, el que por imprudencia o negligencia, por impericia en su
@@ -2162,7 +2168,7 @@
 
   <p>Homicidio o lesiones en riña</p>
 
-  <p>
+  <p id="art">
     ARTICULO 95. - Cuando en riña o agresión en que tomaren parte más de dos
     personas, resultare muerte o lesiones de las determinadas en los artículos 90
     y 91, sin que constare quiénes las causaron, se tendrá por autores a todos los
@@ -2171,7 +2177,7 @@
     lesión.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 96. - Si las lesiones fueren las previstas en el artículo 89, la pena
     aplicable será de cuatro a ciento veinte días de prisión.
   </p>
@@ -2180,7 +2186,7 @@
 
   <p>Duelo</p>
 
-  <p>
+  <p id="art">
     ARTICULO 97. - Los que se batieren en duelo, con intervención de dos o más
     padrinos, mayores de edad, que elijan las armas y arreglen las demás
     condiciones del desafío, serán reprimidos:
@@ -2196,7 +2202,7 @@
     o le infiriere lesión de las determinadas en los artículos 90 y 91.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 98. - Los que se batieren, sin la intervención de padrinos, mayores
     de edad, que elijan las armas y arreglen las demás condiciones del desafío,
     serán reprimidos:
@@ -2210,7 +2216,7 @@
 
   <p>3º El que no causare lesiones, con prisión de un mes a un año.</p>
 
-  <p>
+  <p id="art">
     ARTICULO 99. - El que instigare a otro a provocar o a aceptar un duelo y el
     que desacreditare públicamente a otro por no desafiar o por rehusar un
     desafío, serán reprimidos:
@@ -2228,7 +2234,7 @@
     mencionadas en los artículos 90 y 91.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 100. - El que provocare o diere causa a un desafío, proponiéndose un
     interés pecuniario u otro objeto inmoral, será reprimido:
   </p>
@@ -2248,7 +2254,7 @@
     muerte.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 101. - El combatiente que faltare, en daño de su adversario, a las
     condiciones ajustadas por los padrinos, será reprimido:
   </p>
@@ -2263,13 +2269,13 @@
     muerte.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 102. - Los padrinos de un duelo que usaren cualquier género de
     alevosía en la ejecución del mismo, serán reprimidos con las penas señaladas
     en el artículo anterior, según fueren las consecuencias que resultaren.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 103. - Cuando los padrinos concertaren un duelo a muerte o en
     condiciones tales que de ellas debiere resultar la muerte, serán reprimidos
     con reclusión o prisión de uno a cuatro años, si se verificare la muerte de
@@ -2286,7 +2292,7 @@
 
   <p>Abuso de armas</p>
 
-  <p>
+  <p id="art">
     ARTICULO 104. - Será reprimido con uno a tres años de prisión, el que
     disparare un arma de fuego contra una persona sin herirla.
   </p>
@@ -2301,7 +2307,7 @@
     arma, aunque no se causare herida.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 105. - Si concurriera alguna de las circunstancias previstas en los
     artículos 80 y 81, inciso 1º, letra a), la pena se aumentará o disminuirá en
     un tercio respectivamente.
@@ -2311,7 +2317,7 @@
 
   <p>Abandono de personas</p>
 
-  <p>
+  <p id="art">
     ARTICULO 106.- El que pusiere en peligro la vida o la salud de otro, sea
     colocándolo en situación de desamparo, sea abandonando a su suerte a una
     persona incapaz de valerse y a la que deba mantener o cuidar o a la que el
@@ -2329,7 +2335,7 @@
 
   <p>(Artículo sustituido por art. 2° de la Ley N° 24.410 B.O. 2/1/1995)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 107.- El máximum y el mínimum de las penas establecidas en el
     artículo precedente, serán aumentados en un tercio cuando el delito fuera
     cometido por los padres contra sus hijos y por éstos contra aquéllos o por el
@@ -2338,7 +2344,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 24.410 B.O. 2/1/1995)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 108. - Será reprimido con multa de pesos setecientos cincuenta a
     pesos doce mil quinientos el que encontrando perdido o desamparado a un menor
     de diez años o a una persona herida o inválida o amenazada de un peligro
@@ -2355,7 +2361,7 @@
 
   <p style="text-align: center;"><b>DELITOS CONTRA EL HONOR</b></p>
 
-  <p>
+  <p id="art">
     ARTICULO 109. - La calumnia o falsa imputación a una persona física
     determinada de la comisión de un delito concreto y circunstanciado que dé
     lugar a la acción pública, será reprimida con multa de pesos tres mil ($
@@ -2366,7 +2372,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 26.551 B.O. 27/11/2009)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 110. - El que intencionalmente deshonrare o desacreditare a una
     persona física determinada será reprimido con multa de pesos mil quinientos ($
     1.500.-) a pesos veinte mil ($ 20.000.-). En ningún caso configurarán delito
@@ -2382,7 +2388,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 111. - El acusado de injuria, en los casos en los que las expresiones
     de ningún modo estén vinculadas con asuntos de interés público, no podrá
     probar la verdad de la imputación salvo en los casos siguientes:
@@ -2404,12 +2410,12 @@
 
   <p>(Artículo sustituido por art. 3° de la Ley N° 26.551 B.O. 27/11/2009)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 112. - (Artículo derogado por art. 4° de la Ley N° 26.551 B.O.
     27/11/2009)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 113. - El que publicare o reprodujere, por cualquier medio, injurias
     o calumnias inferidas por otro, será reprimido como autor de las injurias o
     calumnias de que se trate, siempre que su contenido no fuera atribuido en
@@ -2420,7 +2426,7 @@
 
   <p>(Artículo sustituido por art. 5° de la Ley N° 26.551 B.O. 27/11/2009)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 114. - Cuando la injuria o calumnia se hubiere propagado por medio de
     la prensa, en la capital y territorios nacionales, sus autores quedarán
     sometidos a las sanciones del presente código y el juez o tribunal ordenará,
@@ -2428,20 +2434,20 @@
     impresos o periódicos, a costa del culpable, la sentencia o satisfacción.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 115. - Las injurias proferidas por los litigantes, apoderados o
     defensores, en los escritos, discursos o informes producidos ante los
     tribunales y no dados a publicidad, quedarán sujetas únicamente a las
     correcciones disciplinarias correspondientes.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 116. - Cuando las injurias fueren recíprocas, el tribunal podrá,
     según las circunstancias, declarar exentas de pena a las dos partes o a alguna
     de ellas.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 117. - El acusado de injuria o calumnia quedará exento de pena si se
     retractare públicamente, antes de contestar la querella o en el acto de
     hacerlo. La retractación no importará para el acusado la aceptación de su
@@ -2485,14 +2491,14 @@
     Ley N° 24.453 B.O. 7/3/1995)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 118.- (Artículo derogado por art. 4° de la Ley N° 24.453 B.O.
     7/3/1995)
   </p>
 
   <p>Capítulo II</p>
 
-  <p>
+  <p id="art">
     ARTICULO 119. - Será reprimido con reclusión o prisión de seis (6) meses a
     cuatro (4) años el que abusare sexualmente de una persona cuando ésta fuera
     menor de trece (13) años o cuando mediare violencia, amenaza, abuso coactivo o
@@ -2552,7 +2558,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 27.352 B.O. 17/5/2017)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 120 — Será reprimido con prisión o reclusión de tres a seis años el
     que realizare algunas de las acciones previstas en el segundo o en el tercer
     párrafo del artículo 119 con una persona menor de dieciséis años,
@@ -2570,22 +2576,22 @@
 
   <p>(Artículo sustituido por art. 3° de la Ley N° 25.087 B.O. 14/5/1999)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 121. -.(Artículo derogado por art. 4° de la Ley N° 25.087 B.O.
     14/5/1999)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 122. - (Artículo derogado por art. 4° de la Ley N° 25.087 B.O.
     14/5/1999)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 123. - (Artículo derogado por art. 4° de la Ley N° 25.087 B.O.
     14/5/1999)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 124. - Se impondrá reclusión o prisión perpetua, cuando en los casos
     de los artículos 119 y 120 resultare la muerte de la persona ofendida.
   </p>
@@ -2594,7 +2600,7 @@
 
   <p>Capítulo III</p>
 
-  <p>
+  <p id="art">
     ARTICULO 125. - El que promoviere o facilitare la corrupción de menores de
     dieciocho años, aunque mediare el consentimiento de la víctima será reprimido
     con reclusión o prisión de tres a diez años.
@@ -2623,7 +2629,7 @@
 
   <p>(Artículo sustituido por art. 21 de la Ley N° 26.842 B.O. 27/12/2012)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 126 — En el caso del artículo anterior, la pena será de cinco (5) a
     diez (10) años de prisión, si concurriere alguna de las siguientes
     circunstancias:
@@ -2655,7 +2661,7 @@
 
   <p>(Artículo sustituido por art. 22 de la Ley N° 26.842 B.O. 27/12/2012)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 127 — Será reprimido con prisión de cuatro (4) a seis (6) años, el
     que explotare económicamente el ejercicio de la prostitución de una persona,
     aunque mediare el consentimiento de la víctima.
@@ -2702,7 +2708,7 @@
     30/4/2008)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 128 — Será reprimido con prisión de tres (3) a seis (6) años el que
     produjere, financiare, ofreciere, comerciare, publicare, facilitare, divulgare
     o distribuyere, por cualquier medio, toda representación de un menor de
@@ -2736,7 +2742,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 27.436 B.O. 23/4/2018)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 129 — Será reprimido con multa de mil a quince mil pesos el que
     ejecutare o hiciese ejecutar por otros actos de exhibiciones obscenas
     expuestas a ser vistas involuntariamente por terceros.
@@ -2757,7 +2763,7 @@
 
   <p>Capítulo IV</p>
 
-  <p>
+  <p id="art">
     ARTICULO 130 — Será reprimido con prisión de uno a cuatro años, el que
     sustrajere o retuviere a una persona por medio de la fuerza, intimidación o
     fraude, con la intención de menoscabar su integridad sexual.
@@ -2775,7 +2781,7 @@
 
   <p>(Artículo sustituido por art. 11° de la Ley N° 25.087 B.O. 14/5/1999)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 131. - Será penado con prisión de seis (6) meses a cuatro (4) años el
     que, por medio de comunicaciones electrónicas, telecomunicaciones o cualquier
     otra tecnología de transmisión de datos, contactare a una persona menor de
@@ -2787,7 +2793,7 @@
 
   <p>Capítulo V</p>
 
-  <p>
+  <p id="art">
     ARTICULO 132. - En los delitos previstos en los artículos 119: 1°, 2°, 3°
     párrafos, 120: 1° párrafo, y 130 la víctima podrá instar el ejercicio de la
     acción penal pública con el asesoramiento o representación de instituciones
@@ -2796,7 +2802,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 26.738 B.O. 7/4/2012)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 133. - Los ascendientes, descendientes, cónyuges, convivientes,
     afines en línea recta, hermanos, tutores, curadores y cualesquiera persona
     que, con abuso de una relación de dependencia, de autoridad, de poder, de
@@ -2819,13 +2825,13 @@
 
   <p>Matrimonios ilegales</p>
 
-  <p>
+  <p id="art">
     ARTICULO 134. - Serán reprimidos con prisión de uno a cuatro años, los que
     contrajeren matrimonio sabiendo ambos que existe impedimento que cause su
     nulidad absoluta.
   </p>
 
-  <p>ARTICULO 135. - Serán reprimidos con prisión de dos a seis años:</p>
+  <p id="art">ARTICULO 135. - Serán reprimidos con prisión de dos a seis años:</p>
 
   <p>
     1º. El que contrajere matrimonio cuando, sabiendo que existe impedimento que
@@ -2834,7 +2840,7 @@
 
   <p>2º. El que engañando a una persona, simulare matrimonio con ella.</p>
 
-  <p>
+  <p id="art">
     ARTICULO 136. - El oficial público que a sabiendas autorizare un matrimonio de
     los comprendidos en los artículos anteriores, sufrirá, en su caso, la pena que
     en ellos se determina.
@@ -2859,7 +2865,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 137. - En la misma pena incurrirá el representante legítimo de un
     menor impúber que diere el consentimiento para el matrimonio del mismo.
   </p>
@@ -2868,14 +2874,14 @@
 
   <p>Supresión y suposición del estado civil y de la Identidad</p>
 
-  <p>
+  <p id="art">
     ARTICULO 138.- Se aplicará prisión de 1 a 4 años al que, por un acto
     cualquiera, hiciere incierto, alterare o suprimiere el estado civil de otro.
   </p>
 
   <p>(Artículo sustituido por art. 5° de la Ley N° 24.410 B.O. 2/1/1995)</p>
 
-  <p>ARTICULO 139.- Se impondrá prisión de 2 a 6 años:</p>
+  <p id="art">ARTICULO 139.- Se impondrá prisión de 2 a 6 años:</p>
 
   <p>
     1. A la mujer que fingiere preñez o parto para dar a su supuesto hijo derechos
@@ -2912,7 +2918,7 @@
 
   <p>Delitos contra la libertad individual</p>
 
-  <p>
+  <p id="art">
     ARTICULO 140. - Serán reprimidos con reclusión o prisión de cuatro (4) a
     quince (15) años el que redujere a una persona a esclavitud o servidumbre,
     bajo cualquier modalidad, y el que la recibiere en tal condición para
@@ -2922,12 +2928,12 @@
 
   <p>(Artículo sustituido por art. 24 de la Ley N° 26.842 B.O. 27/12/2012)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 141. - Será reprimido con prisión o reclusión de seis meses a tres
     años; el que ilegalmente privare a otro de su libertad personal.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 142. - Se aplicará prisión o reclusión de dos a seis años, al que
     privare a otro de su libertad personal, cuando concurra alguna de las
     circunstancias siguientes:
@@ -3044,7 +3050,7 @@
 
   <p>(Artículo incorporado por art. 1º de la Ley Nº 26.679 B.O. 09/05/2011)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 143. - Será reprimido con reclusión o prisión de uno a tres años e
     inhabilitación especial por doble tiempo:
   </p>
@@ -3080,7 +3086,7 @@
     deba resolver.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 144. - Cuando en los casos del artículo anterior concurriere alguna
     de las circunstancias enumeradas en los incisos 1, 2, 3 y 5 del artículo 142,
     el máximo de la pena privativa de la libertad se elevará a cinco años.
@@ -3180,7 +3186,7 @@
     necesarios por dicho funcionario.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 145. - Será reprimido con prisión de dos a seis años, el que
     condujere a una persona fuera de las fronteras de la República, con el
     propósito de someterla ilegalmente al poder de otro o de alistarla en un
@@ -3245,7 +3251,7 @@
 
   <p>(Artículo sustituido por art. 26 de la Ley N° 26.842 B.O. 27/12/2012)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 146.- Será reprimido con prisión o reclusión de 5 a 15 años, el que
     sustrajere a un menor de 10 años del poder de sus padres, tutor o persona
     encargada de él, y el que lo retuviere u ocultare.
@@ -3253,20 +3259,20 @@
 
   <p>(Artículo sustituido por art. 8° de la Ley N° 24.410 B.O. 2/1/1995)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 147. - En la misma pena incurrirá el que, hallándose encargado de la
     persona de un menor de diez años, no lo presentara a los padres o guardadores
     que lo solicitaren o no diere razón satisfactoria de su desaparición.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 148. - Será reprimido con prisión de un mes a un año, el que indujere
     a un mayor de diez años y menor de quince, a fugar de casa de sus padres,
     guardadores o encargados de su persona.
   </p>
 
   <p>
-    ARTICULO 148: bis: Será reprimido con prisión de 1 (uno) a (cuatro) años el
+    ARTICULO 148 bis. - Será reprimido con prisión de 1 (uno) a (cuatro) años el
     que aprovechare económicamente el trabajo de un niño o niña en violación de
     las normas nacionales que prohíben el trabajo infantil, siempre que el hecho
     no importare un delito más grave.
@@ -3284,7 +3290,7 @@
 
   <p>(Artículo incorporado por art. 1° de la Ley N° 26.847 B.O. 12/4/2013)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 149. - Será reprimido con prisión de un mes a un año, el que ocultare
     a las investigaciones de la justicia o de la policía, a un menor de quince
     años que se hubiere substraído a la potestad o guarda a que estaba legalmente
@@ -3331,21 +3337,21 @@
 
   <p>Violación de domicilio</p>
 
-  <p>
+  <p id="art">
     ARTICULO 150. - Será reprimido con prisión de seis meses a dos años, si no
     resultare otro delito más severamente penado, el que entrare en morada o casa
     de negocio ajena, en sus dependencias o en el recinto habitado por otro,
     contra la voluntad expresa o presunta de quien tenga derecho de excluirlo.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 151. - Se impondrá la misma pena e inhabilitación especial de seis
     meses a dos años, al funcionario público o agente de la autoridad que allanare
     un domicilio sin las formalidades prescriptas por la ley o fuera de los casos
     que ella determina.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 152. - Las disposiciones de los artículos anteriores no se aplicarán
     al que entrare en los sitios expresados, para evitar un mal grave a sí mismo,
     a los moradores o a un tercero, ni al que lo hiciere para cumplir un deber de
@@ -3358,7 +3364,7 @@
 
   <p>(Epígrafe sustituido por art. 3° de la Ley N° 26.388, B.O. 25/6/2008)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 153. - Será reprimido con prisión de quince (15) días a seis (6)
     meses el que abriere o accediere indebidamente a una comunicación electrónica,
     una carta, un pliego cerrado, un despacho telegráfico, telefónico o de otra
@@ -3403,7 +3409,7 @@
 
   <p>(Artículo incorporado por art. 5° de la Ley N° 26.388, B.O. 25/6/2008)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 154. - Será reprimido con prisión de uno a cuatro años, el empleado
     de correos o telégrafos que, abusando de su empleo, se apoderare de una carta,
     de un pliego, de un telegrama o de otra pieza de correspondencia, se impusiere
@@ -3411,7 +3417,7 @@
     la suprimiere, la ocultare o cambiare su texto.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 155. - Será reprimido con multa de pesos un mil quinientos ($ 1.500)
     a pesos cien mil ($ 100.000), el que hallándose en posesión de una
     correspondencia, una comunicación electrónica, un pliego cerrado, un despacho
@@ -3427,7 +3433,7 @@
 
   <p>(Artículo sustituido por art. 6° de la Ley N° 26.388, B.O. 25/6/2008)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 156. - Será reprimido con multa de pesos mil quinientos a pesos
     noventa mil e inhabilitación especial, en su caso, por seis meses a tres años,
     el que teniendo noticia, por razón de su estado, oficio, empleo, profesión o
@@ -3440,7 +3446,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 157. - Será reprimido con prisión de un (1) mes a dos (2) años e
     inhabilitación especial de un (1) a cuatro (4) años, el funcionario público
     que revelare hechos, actuaciones, documentos o datos, que por ley deben ser
@@ -3482,7 +3488,7 @@
 
   <p>Delitos contra la libertad de trabajo y asociación</p>
 
-  <p>
+  <p id="art">
     ARTICULO 158. - Será reprimido con prisión de un mes a un año; el obrero que
     ejerciere violencia sobre otro para compelerlo a tomar parte en una huelga o
     boycott. La misma pena sufrirá el patrón, empresario o empleado que, por sí o
@@ -3491,7 +3497,7 @@
     determinada.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 159. - Será reprimido con multa de pesos dos mil quinientos a pesos
     treinta mil, el que, por maquinaciones fraudulentas, sospechas malévolas o
     cualquier medio de propaganda desleal, tratare de desviar, en su provecho, la
@@ -3507,7 +3513,7 @@
 
   <p>Delitos contra la libertad de reunión</p>
 
-  <p>
+  <p id="art">
     ARTICULO 160. - Será reprimido con prisión de quince días a tres meses, el que
     impidiere materialmente o turbare una reunión lícita, con insultos o amenazas
     al orador o a la institución organizadora del acto.
@@ -3517,7 +3523,7 @@
 
   <p>Delitos contra la libertad de prensa</p>
 
-  <p>
+  <p id="art">
     ARTICULO 161. - Sufrirá prisión de uno a seis meses, el que impidiere o
     estorbare la libre circulación de un libro o periódico.
   </p>
@@ -3530,12 +3536,12 @@
 
   <p>Hurto</p>
 
-  <p>
+  <p id="art">
     ARTICULO 162. - Será reprimido con prisión de un mes a dos años, el que se
     apoderare ilegítimamente de una cosa mueble, total o parcialmente ajena.-
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 163. - Se aplicará prisión de uno a seis años en los casos
     siguientes:
   </p>
@@ -3590,7 +3596,7 @@
 
   <p>Robo</p>
 
-  <p>
+  <p id="art">
     ARTICULO 164. - Será reprimido con prisión de un mes a seis años, el que se
     apoderare ilegítimamente de una cosa mueble, total o parcialmente ajena, con
     fuerza en las cosas o con violencia física en las personas, sea que la
@@ -3598,12 +3604,12 @@
     o después de cometido para procurar su impunidad.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 165. - Se impondrá reclusión o prisión de diez a veinticinco años, si
     con motivo u ocasión del robo resultare un homicidio.
   </p>
 
-  <p>ARTICULO 166. -Se aplicará reclusión o prisión de CINCO a QUINCE años:</p>
+  <p id="art">ARTICULO 166. -Se aplicará reclusión o prisión de CINCO a QUINCE años:</p>
 
   <p>
     1. Si por las violencias ejercidas para realizar el robo, se causare alguna de
@@ -3625,7 +3631,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 25.882 B.O. 26/4/2004)</p>
 
-  <p>ARTICULO 167. - Se aplicará reclusión o prisión de tres a diez años:</p>
+  <p id="art">ARTICULO 167. - Se aplicará reclusión o prisión de tres a diez años:</p>
 
   <p>1º. Si se cometiere el robo en despoblado;</p>
 
@@ -3725,7 +3731,7 @@
 
   <p>Extorsión</p>
 
-  <p>
+  <p id="art">
     ARTICULO 168. - Será reprimido con reclusión o prisión de cinco a diez años,
     el que con intimidación o simulando autoridad pública o falsa orden de la
     misma, obligue a otro a entregar, enviar, depositar o poner a su disposición o
@@ -3738,13 +3744,13 @@
     obligue a otro a suscribir o destruir documentos de obligación o de crédito.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 169. - Será reprimido con prisión o reclusión de tres a ocho años, el
     que, por amenaza de imputaciones contra el honor o de violación de secretos,
     cometiere alguno de los hechos expresados en el artículo precedente.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 170. - Se impondrá reclusión o prisión de cinco (5) a quince (15)
     años, al que sustrajere, retuviere u ocultare a una persona para sacar
     rescate. Si el autor lograre su propósito, el mínimo de la pena se elevará a
@@ -3799,7 +3805,7 @@
 
   <p>(Artículo sustituido por art. 4° de la Ley N° 25.742 B.O. 20/6/2003)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 171. - Sufrirá prisión de dos a seis años, el que substrajere un
     cadáver para hacerse pagar su devolución.
   </p>
@@ -3808,14 +3814,14 @@
 
   <p>Estafas y otras defraudaciones</p>
 
-  <p>
+  <p id="art">
     ARTICULO 172. - Será reprimido con prisión de un mes a seis años, el que
     defraudare a otro con nombre supuesto, calidad simulada, falsos títulos,
     influencia mentida, abuso de confianza o aparentando bienes, crédito,
     comisión, empresa o negociación o valiéndose de cualquier otro ardid o engaño.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 173.- Sin perjuicio de la disposición general del artículo
     precedente, se considerarán casos especiales de defraudación y sufrirán la
     pena que él establece:
@@ -3922,7 +3928,7 @@
     B.O. 25/6/2008)
   </p>
 
-  <p>ARTICULO 174. - Sufrirá prisión de dos a seis años:</p>
+  <p id="art">ARTICULO 174. - Sufrirá prisión de dos a seis años:</p>
 
   <p>
     1º. El que para procurarse a sí mismo o procurar a otro un provecho ilegal en
@@ -3971,7 +3977,7 @@
     art. 174 bis pero fue vetado por Decreto N° 1059/2002 B.O. 20/6/2002)
   </p>
 
-  <p>ARTICULO 175. - Será reprimido con multa de mil pesos a quince mil pesos:</p>
+  <p id="art">ARTICULO 175. - Será reprimido con multa de mil pesos a quince mil pesos:</p>
 
   <p>
     1º. El que encontrare perdida una cosa que no le pertenezca o un tesoro y se
@@ -4033,7 +4039,7 @@
 
   <p>Quebrados y otros deudores punibles</p>
 
-  <p>
+  <p id="art">
     ARTICULO 176. - Será reprimido, como quebrado fraudulento, con prisión de dos
     a seis años e inhabilitación especial de tres a diez años, el comerciante
     declarado en quiebra que, en fraude de sus acreedores, hubiere incurrido en
@@ -4049,7 +4055,7 @@
 
   <p>3º Conceder ventajas indebidas a cualquier acreedor.</p>
 
-  <p>
+  <p id="art">
     ARTICULO 177. - Será reprimido, como quebrado culpable, con prisión de un mes
     a un año e inhabilitación especial de dos a cinco años, el comerciante que
     hubiere causado su propia quiebra y perjudicado a sus acreedores, por sus
@@ -4058,7 +4064,7 @@
     otro acto de negligencia o imprudencia manifiesta.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 178. - Cuando se tratare de la quiebra de una sociedad comercial o de
     una persona jurídica que ejerza el comercio, o se hubiere abierto el
     procedimiento de liquidación sin quiebra de un banco u otra entidad
@@ -4073,7 +4079,7 @@
     cooperativa o mutual.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 179. - Será reprimido con prisión de uno a cuatro años, el deudor no
     comerciante concursado civilmente que, para defraudar a sus acreedores,
     hubiere cometido o cometiere alguno de los actos mencionados en el artículo
@@ -4089,7 +4095,7 @@
     obligaciones civiles.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 180. - Será reprimido con prisión de un mes a un año, el acreedor que
     consintiere en un concordato, convenio o transacción judicial, en virtud de
     una connivencia con el deudor o con un tercero, por la cual hubiere estipulado
@@ -4108,7 +4114,7 @@
 
   <p>Usurpación</p>
 
-  <p>ARTICULO 181.- Será reprimido con prisión de seis meses a tres años:</p>
+  <p id="art">ARTICULO 181.- Será reprimido con prisión de seis meses a tres años:</p>
 
   <p>
     1º el que por violencia, amenazas, engaños, abusos de confianza o
@@ -4130,7 +4136,7 @@
 
   <p>(Artículo sustituido por art. 2° Ley N° 24.454 B.O. 7/3/1995)</p>
 
-  <p>ARTICULO 182. - Será reprimido con prisión de quince días a un año:</p>
+  <p id="art">ARTICULO 182. - Será reprimido con prisión de quince días a un año:</p>
 
   <p>
     1º El que ilícitamente y con el propósito de causar perjuicio a otro sacare
@@ -4161,7 +4167,7 @@
 
   <p>Daños</p>
 
-  <p>
+  <p id="art">
     ARTICULO 183. - Será reprimido con prisión de quince días a un año, el que
     destruyere, inutilizare, hiciere desaparecer o de cualquier modo dañare una
     cosa mueble o inmueble o un animal, total o parcialmente ajeno, siempre que el
@@ -4176,7 +4182,7 @@
     26.388, B.O. 25/6/2008)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 184. - La pena será de tres (3) meses a cuatro (4) años de prisión,
     si mediare cualquiera de las circunstancias siguientes:
   </p>
@@ -4212,7 +4218,7 @@
 
   <p>Disposiciones generales</p>
 
-  <p>
+  <p id="art">
     ARTICULO 185. - Están exentos de responsabilidad criminal, sin perjuicio de la
     civil, por los hurtos, defraudaciones o daños que recíprocamente se causaren:
   </p>
@@ -4239,7 +4245,7 @@
 
   <p>Incendios y otros estragos</p>
 
-  <p>
+  <p id="art">
     ARTICULO 186. - El que causare incendio, explosión o inundación, será
     reprimido:
   </p>
@@ -4301,14 +4307,14 @@
     inmediata de la muerte de alguna persona.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 187. - Incurrirá, según los casos, en las penas señaladas en el
     artículo precedente, el que causare estrago por medio de sumersión o
     varamiento de nave, derrumbe de un edificio, inundación, de una mina o
     cualquier otro medio poderoso de destrucción.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 188. - Será reprimido con prisión de uno a seis años el que,
     destruyendo o inutilizando diques u otras obras destinadas a la defensa común
     contra las inundaciones u otros desastres, hiciere surgir el peligro de que
@@ -4322,7 +4328,7 @@
     instrumentos u otros medios destinados a la extinción o a la defensa referida.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 189. - Será reprimido con prisión de un mes a un año, el que, por
     imprudencia o negligencia, por impericia en su arte o profesión o por
     inobservancia de los reglamentos u ordenanzas, causare un incendio u otros
@@ -4486,7 +4492,7 @@
 
   <p>(Denominación sustituida por art. 1° de la Ley N° 26.362, B.O. 16/4/2008)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 190. - Será reprimido con prisión de dos a ocho años, el que a
     sabiendas ejecutare cualquier acto que ponga en peligro la seguridad de una
     nave, construcción flotante o aeronave.
@@ -4508,7 +4514,7 @@
     cosa propia, si del hecho deriva peligro para la seguridad común.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 191. - El que empleare cualquier medio para detener o entorpecer la
     marcha de un tren o para hacerle descarrilar, será reprimido:
   </p>
@@ -4533,14 +4539,14 @@
     de alguna persona.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 192. - Será reprimido con las penas establecidas en el artículo
     anterior en sus casos respectivos, el que ejecutare cualquier acto tendiente a
     interrumpir el funcionamiento de un telégrafo o teléfono destinado al servicio
     de un ferrocarril.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 193. - Será reprimido con prisión de un mes a un año, si el hecho no
     importare un delito más severamente penado, el que arrojare cuerpos
     contundentes o proyectiles contra un tren o tranvía en marcha.
@@ -4564,7 +4570,7 @@
 
   <p>(Artículo sustituido por art. 5° de la Ley N° 27.347 B.O. 6/1/2017).</p>
 
-  <p>
+  <p id="art">
     ARTICULO 194. - El que, sin crear una situación de peligro común, impidiere,
     estorbare o entorpeciere el normal funcionamiento de los transportes por
     tierra, agua o aire o los servicios públicos de comunicación, de provisión de
@@ -4572,7 +4578,7 @@
     de tres meses a dos años.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 195. - Serán reprimidos con prisión de un mes a un año, si el hecho
     no importare un delito más severamente penado, los conductores, capitanes,
     pilotos, mecánicos y demás empleados de un tren o de un buque, que abandonaren
@@ -4580,7 +4586,7 @@
     término del viaje ferroviario.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 196. - Será reprimido con prisión de seis meses a tres años el que
     por imprudencia o negligencia o por impericia en su arte o profesión o por
     inobservancia de los reglamentos u ordenanzas, causare un descarrilamiento,
@@ -4594,7 +4600,7 @@
 
   <p>(Artículo sustituido por art. 4° de la Ley N° 25.189 28/10/1999)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 197. - Será reprimido con prisión de seis (6) meses a dos (2) años,
     el que interrumpiere o entorpeciere la comunicación telegráfica, telefónica o
     de otra naturaleza o resistiere violentamente el restablecimiento de la
@@ -4607,7 +4613,7 @@
 
   <p>Piratería</p>
 
-  <p>
+  <p id="art">
     ARTICULO 198. - Será reprimido con reclusión o prisión de tres a quince años:
   </p>
 
@@ -4652,7 +4658,7 @@
     piratas o les suministrare auxilio.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 199. - Si los actos de violencia u hostilidad mencionados en el
     artículo anterior, fueren seguidos de la muerte de alguna persona que se
     encontrare en el buque o aeronave atacados, la pena será de diez a veinticinco
@@ -4666,7 +4672,7 @@
     alimentos o medicinas
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 200. - Será reprimido con reclusión o prisión de TRES (3) a DIEZ (10)
     años y multa de PESOS DIEZ MIL ($ 10.000) a PESOS DOSCIENTOS MIL ($ 200.000),
     el que envenenare, adulterare o falsificare de un modo peligroso para la
@@ -4676,7 +4682,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 26.524 B.O. 5/11/2009)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 201. - Las penas del artículo precedente se aplicarán al que
     vendiere, pusiere en venta, suministrare, distribuyere o almacenare con fines
     de comercialización aguas potables, sustancias alimenticias o medicinales o
@@ -4702,12 +4708,12 @@
 
   <p>(Artículo incorporado por art. 3° de la Ley N° 26.524 B.O. 5/11/2009)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 202. - Será reprimido con reclusión o prisión de tres a quince años,
     el que propagare una enfermedad peligrosa y contagiosa para las personas.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 203. - Cuando alguno de los hechos previstos en los artículos
     anteriores fuere cometido por imprudencia, negligencia, impericia en su arte o
     profesión o por inobservancia de los deberes a su cargo, se impondrá multa de
@@ -4718,7 +4724,7 @@
 
   <p>(Artículo sustituido por art. 4° de la Ley N° 26.524 B.O. 5/11/2009)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 204.- Será reprimido con prisión de SEIS (6) meses a TRES (3) años el
     que estando autorizado para la venta de sustancias medicinales, las
     suministrare en especie, calidad o cantidad no correspondiente a la receta
@@ -4766,20 +4772,20 @@
 
   <p>(Artículo incorporado por art. 9° de la Ley N° 26.524 B.O. 5/11/2009)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 205. - Será reprimido con prisión de seis meses a dos años, el que
     violare las medidas adoptadas por las autoridades competentes, para impedir la
     introducción o propagación de una epidemia.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 206. - Será reprimido con prisión de UNO (1) a SEIS (6) meses el que
     violare las reglas establecidas por las leyes de policía sanitaria animal.
   </p>
 
   <p>(Artículo sustituido por art. 4° de la Ley N° 25.890 B.O. 21/5/2004)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 207. - En el caso de condenación por un delito previsto en este
     Capítulo, el culpable, si fuere funcionario público o ejerciere alguna
     profesión o arte, sufrirá, además, inhabilitación especial por doble tiempo
@@ -4787,7 +4793,7 @@
     especial durará de un mes a un año.
   </p>
 
-  <p>ARTICULO 208. - Será reprimido con prisión de quince días a un año:</p>
+  <p id="art">ARTICULO 208. - Será reprimido con prisión de quince días a un año:</p>
 
   <p>
     1º El que, sin título ni autorización para el ejercicio de un arte de curar o
@@ -4817,7 +4823,7 @@
 
   <p>Instigación a cometer delitos</p>
 
-  <p>
+  <p id="art">
     ARTICULO 209. - El que públicamente instigare a cometer un delito determinado
     contra una persona o institución, será reprimido, por la sola instigación, con
     prisión de dos a seis años, según la gravedad del delito y las demás
@@ -4838,7 +4844,7 @@
 
   <p>Asociación ilícita</p>
 
-  <p>
+  <p id="art">
     ARTICULO 210. - Será reprimido con prisión o reclusión de tres a diez años, el
     que tomare parte en una asociación o banda de tres o más personas destinada a
     cometer delitos por el solo hecho de ser miembro de la asociación. Para los
@@ -4880,7 +4886,7 @@
 
   <p>Intimidación pública</p>
 
-  <p>
+  <p id="art">
     ARTICULO 211. - Será reprimido con prisión de dos a seis años, el que, para
     infundir un temor público o suscitar tumultos o desórdenes, hiciere señales,
     diere voces de alarma, amenazare con la comisión de un delito de peligro
@@ -4894,7 +4900,7 @@
     será de prisión de tres a diez años.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 212. - Será reprimido con prisión de tres a seis años el que
     públicamente incitare a la violencia colectiva contra grupos de personas o
     instituciones, por la sola incitación.
@@ -4904,7 +4910,7 @@
 
   <p>Apología del crimen</p>
 
-  <p>
+  <p id="art">
     ARTICULO 213. - Será reprimido con prisión de un mes a un año, el que hiciere
     públicamente y por cualquier medio la apología de un delito o de un condenado
     por delito.
@@ -4947,7 +4953,7 @@
 
   <p>Traición</p>
 
-  <p>
+  <p id="art">
     ARTICULO 214. - Será reprimido con reclusión o prisión de diez a veinticinco
     años o reclusión o prisión perpetua y en uno u otro caso, inhabilitación
     absoluta perpetua, siempre que el hecho no se halle comprendido en otra
@@ -4957,7 +4963,7 @@
     socorro.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 215. - Será reprimido con reclusión o prisión perpetua, el que
     cometiere el delito previsto en el artículo precedente, en los casos
     siguientes:
@@ -4981,7 +4987,7 @@
     contenido y aplicación)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 216. - Será reprimido con reclusión o prisión de uno a ocho años, el
     que tomare parte en una conspiración de dos o más personas, para cometer el
     delito de traición, en cualquiera de los casos comprendidos en los artículos
@@ -4989,12 +4995,12 @@
     ejecución.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 217. - Quedará eximido de pena el que revelare la conspiración a la
     autoridad, antes de haberse comenzado el procedimiento.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 218. - Las penas establecidas en los artículos anteriores se
     aplicarán, también, cuando los hechos previstos en ellos fueren cometidos
     contra una potencia aliada de la República, en guerra contra un enemigo común.
@@ -5012,7 +5018,7 @@
 
   <p>Delitos que comprometen la paz y la dignidad de la Nación</p>
 
-  <p>
+  <p id="art">
     ARTICULO 219. - Será reprimido con prisión de uno a seis años, el que por
     actos materiales hostiles no aprobados por el gobierno nacional, diere motivos
     al peligro de una declaración de guerra contra la Nación, expusiere a sus
@@ -5033,7 +5039,7 @@
     divulgación y capacitación sobre su contenido y aplicación)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 220. Se impondrá prisión de seis (6) meses a dos (2) años, al que
     violare los tratados concluidos con naciones extranjeras, las treguas y
     armisticios acordados entre la República y una potencia enemiga o entre sus
@@ -5052,13 +5058,13 @@
     un programa de divulgación y capacitación sobre su contenido y aplicación)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 221. - Será reprimido con prisión de seis meses a dos años, el que
     violare las inmunidades del jefe de un Estado o del representante de una
     potencia extranjera.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 222. - Será reprimido con reclusión o prisión de uno (1) a seis (6)
     años, el que revelare secretos políticos, industriales, tecnológicos o
     militares concernientes a la seguridad, a los medios de defensa o a las
@@ -5086,14 +5092,14 @@
     contenido y aplicación)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 223. - Será reprimido con prisión de un mes a un año e inhabilitación
     especial por doble tiempo, el que por imprudencia o negligencia diere a
     conocer los secretos mencionados en el artículo precedente, de los que se
     hallare en posesión en virtud de su empleo u oficio.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 224. - Será reprimido con prisión de seis meses a dos años, el que
     indebidamente levantare planos de fortificaciones, buques, establecimientos,
     vías u otras obras militares o se introdujere con tal fin, clandestina o
@@ -5101,7 +5107,7 @@
     público.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 225. - Será reprimido con reclusión o prisión de tres a diez años, el
     que, encargado por el gobierno argentino de una negociación con un estado
     extranjero, la condujere de un modo perjudicial a la Nación, apartándose de
@@ -5117,7 +5123,7 @@
 
   <p>Atentados al orden constitucional y a la vida democrática</p>
 
-  <p>
+  <p id="art">
     ARTICULO 226. - Serán reprimidos con prisión de cinco a quince años los que se
     alzaren en armas para cambiar la Constitución, deponer alguno de los poderes
     públicos del gobierno nacional, arrancarle alguna medida o concesión o
@@ -5139,7 +5145,7 @@
     prisión de uno a cuatro años.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 227. - Serán reprimidos con las penas establecidas en el artículo 215
     para los traidores a la patria, los miembros del Congreso que concedieren al
     Poder Ejecutivo Nacional y los miembros de las legislaturas provinciales que
@@ -5187,7 +5193,7 @@
     elemento constitutivo o calificante del delito de que se trate.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 228. - Se impondrá prisión de seis meses a dos años al que ejecutare
     o mandare ejecutar decretos de los concilios, bulas, breves y rescriptos del
     Papa que, para su cumplimiento, necesiten del pase del gobierno, sin haberlo
@@ -5199,7 +5205,7 @@
 
   <p>Sedición</p>
 
-  <p>
+  <p id="art">
     ARTICULO 229. - Serán reprimidos con prisión de uno a seis años, los que, sin
     rebelarse contra el gobierno nacional, armaren una provincia contra otra, se
     alzaren en armas para cambiar la Constitución local, deponer alguno de los
@@ -5209,7 +5215,7 @@
     establecidas en la ley.
   </p>
 
-  <p>ARTICULO 230. - Serán reprimidos con prisión de uno a cuatro años:</p>
+  <p id="art">ARTICULO 230. - Serán reprimidos con prisión de uno a cuatro años:</p>
 
   <p>
     1. Los individuos de una fuerza armada o reunión de personas, que se
@@ -5228,7 +5234,7 @@
 
   <p>Disposiciones comunes a los Capítulos precedentes</p>
 
-  <p>
+  <p id="art">
     ARTICULO 231. - Luego que se manifieste la rebelión o sedición, la autoridad
     nacional más próxima intimará hasta dos veces a los sublevados que
     inmediatamente se disuelvan o retiren, dejando pasar entre una y otra
@@ -5238,14 +5244,14 @@
     segunda intimación, desde que los sublevados hicieren uso de las armas.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 232. - En caso de disolverse el tumulto sin haber causado otro mal
     que la perturbación momentánea del orden, sólo serán enjuiciados los
     promotores o directores, a quienes se reprimirá con la mitad de la pena
     señalada para el delito.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 233. - El que tomare parte como promotor o director, en una
     conspiración de dos o más personas para cometer los delitos de rebelión o
     sedición, será reprimido, si la conspiración fuere descubierta antes de
@@ -5253,7 +5259,7 @@
     que se trataba de perpetrar.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 234. - El que sedujere tropas o usurpare el mando de ellas, de un
     buque de guerra, de una plaza fuerte o de un puesto de guardia o retuviere
     ilegalmente un mando político o militar para cometer una rebelión o una
@@ -5263,7 +5269,7 @@
     los casos respectivos.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 235. - Los funcionarios públicos que hubieren promovido o ejecutado
     alguno de los delitos previstos en este Título, sufrirán además inhabilitación
     especial por un tiempo doble del de la condena.- Los funcionarios que no
@@ -5275,7 +5281,7 @@
     tal calidad.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 236. - Cuando al ejecutar los delitos previstos en este Título, el
     culpable cometiere algún otro, se observarán las reglas establecidas para el
     concurso de hechos punibles.
@@ -5291,14 +5297,14 @@
 
   <p>Atentado y resistencia contra la autoridad</p>
 
-  <p>
+  <p id="art">
     ARTICULO 237. - Será reprimido con prisión de un mes a un año, el que empleare
     intimidación o fuerza contra un funcionario público o contra la persona que le
     prestare asistencia a requerimiento de aquél o en virtud de un deber legal,
     para exigirle la ejecución u omisión de un acto propio de sus funciones.
   </p>
 
-  <p>ARTICULO 238. - La prisión será de seis meses a dos años:</p>
+  <p id="art">ARTICULO 238. - La prisión será de seis meses a dos años:</p>
 
   <p>1 Si el hecho se cometiere a mano armada;</p>
 
@@ -5353,14 +5359,14 @@
     un programa de divulgación y capacitación sobre su contenido y aplicación)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 239. - Será reprimido con prisión de quince días a un año, el que
     resistiere o desobedeciere a un funcionario público en el ejercicio legítimo
     de sus funciones o a la persona que le prestare asistencia a requerimiento de
     aquél o en virtud de una obligación legal.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 240. - Para los efectos de los dos artículos precedentes, se reputará
     funcionario público al particular que tratare de aprehender o hubiere
     aprehendido a un delincuente en flagrante delito.
@@ -5380,7 +5386,7 @@
     un programa de divulgación y capacitación sobre su contenido y aplicación)
   </p>
 
-  <p>ARTICULO 241. - Será reprimido con prisión de quince días a seis meses:</p>
+  <p id="art">ARTICULO 241. - Será reprimido con prisión de quince días a seis meses:</p>
 
   <p>
     1 El que perturbare el orden en las sesiones de los cuerpos legislativos
@@ -5433,7 +5439,7 @@
     un programa de divulgación y capacitación sobre su contenido y aplicación)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 242. - Será reprimido con multa de pesos setecientos cincuenta a
     pesos diez mil e inhabilitación especial de uno a cinco años, el funcionario
     público que, en el arresto o formación de causa contra un miembro de los
@@ -5447,7 +5453,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 243. - Será reprimido con prisión de quince días a un mes, el que
     siendo legalmente citado como testigo, perito o intérprete, se abstuviere de
     comparecer o de prestar la declaración o exposición respectiva. En el caso del
@@ -5459,12 +5465,12 @@
 
   <p>Falsa Denuncia</p>
 
-  <p>
+  <p id="art">
     ARTICULO 244. -(Artículo derogado por art. 2° de la Ley N° 24.198 B.O.
     3/6/1993).
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 245. - Se impondrá prisión de dos meses a un año o multa de pesos
     setecientos cincuenta a pesos doce mil quinientos al que denunciare falsamente
     un delito ante la autoridad.
@@ -5479,7 +5485,7 @@
 
   <p>Usurpación de autoridad, títulos u honores</p>
 
-  <p>
+  <p id="art">
     ARTICULO 246. - Será reprimido con prisión de un mes a un año e inhabilitación
     especial por doble tiempo:
   </p>
@@ -5511,7 +5517,7 @@
     un programa de divulgación y capacitación sobre su contenido y aplicación)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 247. - Será reprimido con prisión de quince días a un año el que
     ejerciere actos propios de una profesión para la que se requiere una
     habilitación especial, sin poseer el título o la autorización correspondiente.
@@ -5533,7 +5539,7 @@
     Abuso de autoridad y violación de los deberes de los funcionarios públicos
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 248. - Será reprimido con prisión de un mes a dos años e
     inhabilitación especial por doble tiempo, el funcionario público que dictare
     resoluciones u órdenes contrarias a las constituciones o leyes nacionales o
@@ -5555,7 +5561,7 @@
 
   <p>(Artículo incorporado por art. 5° de la Ley N° 25.890 B.O. 21/5/2004)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 249. - Será reprimido con multa de pesos setecientos cincuenta a
     pesos doce mil quinientos e inhabilitación especial de un mes a un año, el
     funcionario público que ilegalmente omitiere, rehusare hacer o retardare algún
@@ -5581,7 +5587,7 @@
     un programa de divulgación y capacitación sobre su contenido y aplicación)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 250. - Será reprimido con prisión de un mes a dos años e
     inhabilitación especial por doble tiempo, el jefe o agente de la fuerza
     pública, que rehusare, omitiere o retardare, sin causa justificada, la
@@ -5613,7 +5619,7 @@
     un programa de divulgación y capacitación sobre su contenido y aplicación)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 251. - Será reprimido con prisión de un mes a cuatro años e
     inhabilitación especial por doble tiempo, el funcionario público que
     requiriere la asistencia de la fuerza pública contra la ejecución de
@@ -5621,7 +5627,7 @@
     judiciales.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 252. - Será reprimido con multa de pesos setecientos cincuenta ($
     750) a pesos doce mil quinientos ($ 12.500) e inhabilitación especial de un
     (1) mes a un (1) año, el funcionario público que, sin habérsele admitido la
@@ -5657,7 +5663,7 @@
   </p>
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 27.079 B.O. 19/12/2014)</p>
-  <p>
+  <p id="art">
     ARTICULO 253. - Será reprimido con multa de pesos setecientos cincuenta a
     pesos doce mil quinientos e inhabilitación especial de seis meses a dos años,
     el funcionario público que propusiere o nombrare para cargo público, a persona
@@ -5706,7 +5712,7 @@
 
   <p>Violación de sellos y documentos</p>
 
-  <p>
+  <p id="art">
     ARTICULO 254. - Será reprimido con prisión de seis meses a dos años, el que
     violare los sellos puestos por la autoridad para asegurar la conservación o la
     identidad de una cosa. Si el culpable fuere funcionario público y hubiere
@@ -5721,7 +5727,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 255. - Será reprimido con prisión de un (1) mes a cuatro (4) años, el
     que sustrajere, alterare, ocultare, destruyere o inutilizare en todo o en
     parte objetos destinados a servir de prueba ante la autoridad competente,
@@ -5747,7 +5753,7 @@
     1/11/1999. Vigencia: a los ocho días desde su publicación.)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 256. - Será reprimido con reclusión o prisión de uno a seis años e
     inhabilitación especial perpetua, el funcionario público que por sí o por
     persona interpuesta, recibiere dinero o cualquier otra dádiva o aceptare una
@@ -5782,7 +5788,7 @@
     Vigencia: a los ocho días desde su publicación.)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 257. - Será reprimido con prisión o reclusión de cuatro a doce años e
     inhabilitación especial perpetua, el magistrado del Poder Judicial o del
     Ministerio Público que por sí o por persona interpuesta, recibiere dinero o
@@ -5796,7 +5802,7 @@
     a los ocho días desde su publicación.)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 258. - Será reprimido con prisión de uno a seis años, el que directa
     o indirectamente diere u ofreciere dádivas en procura de alguna de las
     conductas reprimidas por los artículos 256 y 256 bis, primer párrafo. Si la
@@ -5841,7 +5847,7 @@
     República Argentina)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 259. - Será reprimido con prisión de un mes a dos años e
     inhabilitación absoluta de uno a seis años, el funcionario público que
     admitiere dádivas, que fueran entregadas en consideración a su oficio,
@@ -5866,7 +5872,7 @@
 
   <p>Malversación de caudales públicos</p>
 
-  <p>
+  <p id="art">
     ARTICULO 260. - Será reprimido con inhabilitación especial de un mes a tres
     años, el funcionario público que diere a los caudales o efectos que
     administrare una aplicación diferente de aquella a que estuvieren destinados.
@@ -5875,7 +5881,7 @@
     ciento de la cantidad distraída.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 261. - Será reprimido con reclusión o prisión de dos a diez años e
     inhabilitación absoluta perpetua, el funcionario público que sustrajere
     caudales o efectos cuya administración, percepción o custodia le haya sido
@@ -5884,7 +5890,7 @@
     servicios pagados por una administración pública.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 262. - Será reprimido con multa del veinte al sesenta por ciento del
     valor substraído, el funcionario público que, por imprudencia o negligencia o
     por inobservancia de los reglamentos o deberes de su cargo, diere ocasión a
@@ -5892,7 +5898,7 @@
     se trata en el artículo anterior.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 263. - Quedan sujetos a las disposiciones anteriores los que
     administraren o custodiaren bienes pertenecientes a establecimientos de
     instrucción pública o de beneficencia, así como los administradores y
@@ -5900,7 +5906,7 @@
     competente, aunque pertenezcan a particulares.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 264. - Será reprimido con inhabilitación especial por uno a seis
     meses, el funcionario público que, teniendo fondos expeditos, demorare
     injustificadamente un pago ordinario o decretado por autoridad competente. En
@@ -5913,7 +5919,7 @@
 
   <p>Negociaciones incompatibles con el ejercicio de funciones públicas</p>
 
-  <p>
+  <p id="art">
     ARTICULO 265. - Será reprimido con reclusión o prisión de uno (1) a seis (6)
     años e inhabilitación especial perpetua, el funcionario público que,
     directamente, por persona interpuesta o por acto simulado, se interesare en
@@ -5942,7 +5948,7 @@
 
   <p>Exacciones ilegales</p>
 
-  <p>
+  <p id="art">
     ARTICULO 266. - Será reprimido con prisión de un (1) a cuatro (4) años e
     inhabilitación especial de uno (1) a (5) cinco años, el funcionario público
     que, abusando de su cargo, solicitare, exigiere o hiciere pagar o entregar
@@ -5961,13 +5967,13 @@
     República Argentina)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 267. - Si se empleare intimidación o se invocare orden superior,
     comisión, mandamiento judicial u otra autorización legítima, podrá elevarse la
     prisión hasta cuatro años y la inhabilitación hasta seis años.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 268. - Será reprimido con prisión de dos (2) a seis (6) años e
     inhabilitación absoluta perpetua, el funcionario público que convirtiere en
     provecho propio o de tercero las exacciones expresadas en los artículos
@@ -6059,7 +6065,7 @@
 
   <p>Prevaricato</p>
 
-  <p>
+  <p id="art">
     ARTICULO 269. - Sufrirá multa de pesos tres mil a pesos setenta y cinco mil e
     inhabilitación absoluta perpetua el juez que dictare resoluciones contrarias a
     la ley expresa invocada por las partes o por el mismo o citare, para
@@ -6081,7 +6087,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 270. - Será reprimido con multa de pesos dos mil quinientos a pesos
     treinta mil e inhabilitación absoluta de uno a seis años, el juez que
     decretare prisión preventiva por delito en virtud del cual no proceda o que
@@ -6095,7 +6101,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 271. - Será reprimido con multa de pesos dos mil quinientos a pesos
     treinta mil, e inhabilitación especial de uno a seis años, el abogado o
     mandatario judicial que defendiere o representare partes contrarias en el
@@ -6108,7 +6114,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 272. - La disposición del artículo anterior será aplicable a los
     fiscales, asesores y demás funcionarios encargados de emitir su dictamen ante
     las autoridades.
@@ -6118,7 +6124,7 @@
 
   <p>Denegación y retardo de justicia</p>
 
-  <p>
+  <p id="art">
     ARTICULO 273. - Será reprimido con inhabilitación absoluta de uno a cuatro
     años, el juez que se negare a juzgar so pretexto de obscuridad, insuficiencia
     o silencio de la ley.
@@ -6130,7 +6136,7 @@
     los términos legales.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 274. - El funcionario público que, faltando a la obligación de su
     cargo, dejare de promover la persecución y represión de los delincuentes, será
     reprimido con inhabilitación absoluta de seis meses a dos años, a menos que
@@ -6141,7 +6147,7 @@
 
   <p>Falso testimonio</p>
 
-  <p>
+  <p id="art">
     ARTICULO 275. - Será reprimido con prisión de un mes a cuatro años, el
     testigo, perito o intérprete que afirmare una falsedad o negare o callare la
     verdad, en todo o en parte, en su deposición, informe, traducción o
@@ -6158,7 +6164,7 @@
     doble tiempo del de la condena.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 276. - La pena del testigo, perito o intérprete falso, cuya
     declaración fuere prestada mediante cohecho, se agravará con una multa igual
     al duplo de la cantidad ofrecida o recibida.
@@ -6184,7 +6190,7 @@
     21/06/2011)
   </p>
 
-  <p>ARTICULO 277.-</p>
+  <p id="art">ARTICULO 277.-</p>
 
   <p>
     1.- Será reprimido con prisión de seis (6) meses a tres (3) años el que, tras
@@ -6281,12 +6287,12 @@
 
   <p>(Artículo incorporado por art. 7° de la Ley N° 25.890 B.O. 21/572004)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 278.- (Artículo derogado por art. 2º de la Ley Nº 26.683 B.O.
     21/06/2011)
   </p>
 
-  <p>ARTICULO 279.-</p>
+  <p id="art">ARTICULO 279.-</p>
 
   <p>
     1) Si la escala penal prevista para el delito precedente fuera menor que la
@@ -6327,13 +6333,13 @@
     26/1/1987)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 280. - Será reprimido con prisión de un mes a un año, el que
     hallándose legalmente detenido se evadiere por medio de violencia en las
     personas o fuerza en las cosas.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 281. - Será reprimido con prisión de un mes a cuatro años, el que
     favoreciere la evasión de algún detenido o condenado, y si fuere funcionario
     público, sufrirá, además, inhabilitación absoluta por triple tiempo.
@@ -6368,13 +6374,13 @@
     de crédito
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 282. - Serán reprimidos con reclusión o prisión de tres a quince
     años, el que falsificare moneda que tenga curso legal en la República y el que
     la introdujere, expendiere o pusiere en circulación.-
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 283. - Será reprimido con reclusión o prisión de uno a cinco años, el
     que cercenare o alterare moneda de curso legal y el que introdujere,
     expendiere o pusiere en circulación moneda cercenada o alterada.
@@ -6385,7 +6391,7 @@
     seis meses a tres años de prisión.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 284. - Si la moneda falsa, cercenada o alterada se hubiere recibido
     de buena fe y se expendiere o circulare con conocimiento de la falsedad,
     cercenamiento o alteración, la pena será de pesos argentinos mil a pesos
@@ -6397,7 +6403,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 285. - Para los efectos de los artículos anteriores quedan
     equiparados a la moneda nacional, la moneda extranjera, los títulos de la
     deuda nacional, provincial o municipal y sus cupones, los bonos o libranzas de
@@ -6410,12 +6416,12 @@
 
   <p>(Artículo sustituido por art. 2° de la Ley N° 25.930 B.O. 21/9/2004)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 286. - (Artículo derogado por art. 3° de la Ley N° 25.930 B.O.
     21/9/2004)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 287. - Serán reprimidos con reclusión o prisión de uno a seis años e
     inhabilitación absoluta por doble tiempo, el funcionario público y el director
     o administrador de un banco o de una compañía que fabricare o emitiere o
@@ -6428,7 +6434,7 @@
 
   <p>Falsificación de sellos, timbres y marcas</p>
 
-  <p>
+  <p id="art">
     ARTICULO 288. - Será reprimido con reclusión o prisión de uno a seis años:
   </p>
 
@@ -6442,7 +6448,7 @@
     fraudulenta del sello verdadero.
   </p>
 
-  <p>ARTICULO 289. - Será reprimido con prisión de seis meses a tres años:</p>
+  <p id="art">ARTICULO 289. - Será reprimido con prisión de seis meses a tres años:</p>
 
   <p>
     1. El que falsificare marcas, contraseñas o firmas oficialmente usadas o
@@ -6460,7 +6466,7 @@
 
   <p>(Artículo sustituido por art. 1° de la Ley N° 24.721 B.O. 18/11/1996)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 290. - Será reprimido con prisión de quince días a un año, el que
     hiciere desaparecer de cualquiera de los sellos, timbres, marcas o
     contraseñas, a que se refieren los artículos anteriores, el signo que indique
@@ -6478,7 +6484,7 @@
     29/12/1993)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 291. - Cuando el culpable de alguno de los delitos comprendidos en
     los artículos anteriores, fuere funcionario público y cometiere el hecho
     abusando de su cargo, sufrirá, además, inhabilitación absoluta por doble
@@ -6489,7 +6495,7 @@
 
   <p>Falsificación de documentos en general</p>
 
-  <p>
+  <p id="art">
     ARTICULO 292.- El que hiciere en todo o en parte un documento falso o adultere
     uno verdadero, de modo que pueda resultar perjuicio, será reprimido con
     reclusión o prisión de uno a seis años, si se tratare de un instrumento
@@ -6514,7 +6520,7 @@
 
   <p>(Artículo sustituido por art. 9° de la Ley N° 24.410 B.O. 2/1/1995)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 293.- Será reprimido con reclusión o prisión de uno a seis años, el
     que insertare o hiciere insertar en un instrumento público declaraciones
     falsas, concernientes a un hecho que el documento deba probar, de modo que
@@ -6538,13 +6544,13 @@
 
   <p>(Artículo incorporado por art. 8° de la Ley N° 25.890 B.O. 21/5/2004)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 294. - El que suprimiere o destruyere, en todo o en parte, un
     documento de modo que pueda resultar perjuicio, incurrirá en las penas
     señaladas en los artículos anteriores, en los casos respectivos.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 295. - Sufrirá prisión de un mes a un año, el médico que diere por
     escrito un certificado falso, concerniente a la existencia o inexistencia,
     presente o pasada, de alguna enfermedad o lesión cuando de ello resulte
@@ -6557,12 +6563,12 @@
     otro hospital.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 296. - El que hiciere uso de un documento o certificado falso o
     adulterado, será reprimido como si fuere autor de la falsedad.
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 297.- Para los efectos de este Capítulo, quedan equiparados a los
     instrumentos públicos los testamentos ológrafos o cerrados, los certificados
     de parto o de nacimiento, las letras de cambio y los títulos de crédito
@@ -6571,7 +6577,7 @@
 
   <p>(Artículo sustituido por art. 11 de la Ley N° 24.410 B.O. 2/1/1995)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 298. - Cuando alguno de los delitos previstos en este Capítulo, fuere
     ejecutado por un funcionario público con abuso de sus funciones, el culpable
     sufrirá, además, inhabilitación absoluta por doble tiempo del de la condena.
@@ -6593,7 +6599,7 @@
 
   <p>Disposiciones comunes a los Capítulos precedentes</p>
 
-  <p>
+  <p id="art">
     ARTICULO 299. - Sufrirá prisión de un mes a un año, el que fabricare,
     introdujere en el país o conservare en su poder, materias o instrumentos
     conocidamente destinados a cometer alguna de las falsificaciones legisladas en
@@ -6604,7 +6610,7 @@
 
   <p>De los fraudes al comercio y a la industria</p>
 
-  <p>
+  <p id="art">
     ARTICULO 300. - Serán reprimidos con prisión de seis (6) meses a dos (2) años:
   </p>
 
@@ -6641,7 +6647,7 @@
     la República Argentina)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 301. - Será reprimido con prisión de seis meses a dos años, el
     director, gerente, administrador o liquidador de una sociedad anónima, o
     cooperativa o de otra persona colectiva que a sabiendas prestare su concurso o
@@ -6668,7 +6674,7 @@
 
   <p>Del pago con cheques sin provisión de fondos</p>
 
-  <p>
+  <p id="art">
     ARTICULO 302. - Será reprimido con prisión de seis meses a cuatro años e
     inhabilitación especial de uno a cinco años, siempre que no concurran las
     circunstancias del artículo 172:
@@ -6705,7 +6711,7 @@
     <b>DELITOS CONTRA EL ORDEN ECONOMICO Y FINANCIERO</b>
   </p>
 
-  <p>ARTICULO 303. - ...</p>
+  <p id="art">ARTICULO 303. - ...</p>
 
   <p>
     1) Será reprimido con prisión de tres (3) a diez (10) años y multa de dos (2)
@@ -6758,7 +6764,7 @@
 
   <p>(Artículo incorporado por art. 5º de la Ley Nº 26.683 B.O. 21/06/2011)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 304. - Cuando los hechos delictivos previstos en el artículo
     precedente hubieren sido realizados en nombre, o con la intervención, o en
     beneficio de una persona de existencia ideal, se impondrán a la entidad las
@@ -6810,7 +6816,7 @@
 
   <p>(Artículo incorporado por art. 5º de la Ley Nº 26.683 B.O. 21/06/2011)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 305. - El juez podrá adoptar desde el inicio de las actuaciones
     judiciales las medidas cautelares suficientes para asegurar la custodia,
     administración, conservación, ejecución y disposición del o de los bienes que
@@ -6842,7 +6848,7 @@
 
   <p>(Artículo incorporado por art. 5º de la Ley Nº 26.683 B.O. 21/06/2011)</p>
 
-  <p>ARTICULO 306.-</p>
+  <p id="art">ARTICULO 306.-</p>
   <p>
     1. Será reprimido con prisión de cinco (5) a quince (15) años y multa de dos
     (2) a diez (10) veces del monto de la operación, el que directa o
@@ -6889,7 +6895,7 @@
 
   <p>(Artículo incorporado por art. 5° de la Ley N° 26.734 B.O. 28/12/2011)</p>
 
-  <p>
+  <p id="art">
     ARTICULO 307.- Será reprimido con prisión de uno (1) a cuatro (4) años, multa
     equivalente al monto de la operación, e inhabilitación especial de hasta cinco
     (5) años, el director, miembro de órgano de fiscalización, accionista,
@@ -6906,7 +6912,7 @@
     B.O. 06/02/2012)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 308.- El mínimo de la pena prevista en el artículo anterior se
     elevará a dos (2) años de prisión y el máximo a seis (6) años de prisión,
     cuando:
@@ -6946,7 +6952,7 @@
     B.O. 06/02/2012)
   </p>
 
-  <p>ARTICULO 309.-</p>
+  <p id="art">ARTICULO 309.-</p>
 
   <p>
     1.&nbsp; &nbsp; Será reprimido con prisión de uno (1) a cuatro (4) años, multa
@@ -6985,7 +6991,7 @@
     B.O. 06/02/2012)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 310.- Será reprimido con prisión de uno (1) a cuatro (4) años, multa
     de dos (2) a ocho (8) veces el valor de las operaciones realizadas e
     inhabilitación especial hasta seis (6) años, el que por cuenta propia o ajena,
@@ -7014,7 +7020,7 @@
     B.O. 06/02/2012)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 311.- Serán reprimidos con prisión de uno (1) a cuatro (4) años,
     multa de dos (2) a seis (6) veces el valor de las operaciones e inhabilitación
     de hasta seis (6) años, los empleados y funcionarios de instituciones
@@ -7036,7 +7042,7 @@
     B.O. 06/02/2012)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 312.- Serán reprimidos con prisión de uno (1) a seis (6) años e
     inhabilitación de hasta seis (6) años, los empleados y funcionarios de
     instituciones financieras y de aquellas que operen en el mercado de valores
@@ -7052,7 +7058,7 @@
     B.O. 06/02/2012)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 313.- Cuando los hechos delictivos previstos en los artículos
     precedentes hubieren sido realizados en nombre, o con la intervención, o en
     beneficio de una persona de existencia ideal, se aplicarán las disposiciones
@@ -7080,14 +7086,14 @@
   </p>
   <p id="27" style="text-align: center;"><b>DISPOSICIONES COMPLEMENTARIAS</b></p>
 
-  <p>
+  <p id="art">
     ARTICULO 314. - El presente código regirá como ley de la Nación seis meses
     después de su promulgación. (Artículo 306 renumerado como Artículo 314 por
     art. 10 de la Ley N° 26.733 B.O. 28/12/2011). (Artículo 303 renumerado como
     Artículo 306 por art. 5º de la Ley Nº 26.683 B.O. 21/06/2011)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 315. - El Poder Ejecutivo dispondrá la edición oficial del código
     conjuntamente con la exposición de motivos que lo acompaña. Los gastos que
     origine la publicación se imputarán a esta ley. (Artículo 306 renumerado como
@@ -7095,7 +7101,7 @@
     renumerado como Artículo 307 por art. 5º de la Ley Nº 26.683 B.O. 21/06/2011)
   </p>
 
-  <p>
+  <p id="art">
     ARTICULO 316. - Quedan derogadas las leyes números 49, 1920, 3335, 3900, 3972,
     4189, 7029, 9077 y 9143, lo mismo que las demás en cuanto se opusieran a este
     código. Las penas de presidio y penitenciaría que establecen las leyes
@@ -7105,7 +7111,40 @@
     (Artículo 305 renumerado como Artículo 308 por art. 5º de la Ley Nº 26.683
     B.O. 21/06/2011)
   </p>
+</main>
 
+<script>
+  for (let index = 1; index <= 316; index++) {
+let x = document.getElementById("art")
+x.setAttribute("id", "art" + index)
+}
+
+
+
+
+
+function buscar() {
+
+let number = parseInt(document.querySelector(".buscar").value);
+
+let enlace = document.getElementById("link");
+
+let resaltar = document.getElementById(("art" + number));
+
+let confirmar = document.getElementById("btnBuscar");
+
+enlace.setAttribute("href", "#art" + number);
+
+enlace.innerText = "Buscar art. " + number;
+
+resaltar.setAttribute("class", "found");
+
+console.log(number);
+
+}
+
+
+</script>
 
 </body>
 
