@@ -5,6 +5,8 @@
 
 body {
     background-color: #F3F5FC;
+    margin: 0;
+   
 }
 
 #logo{
@@ -98,4 +100,21 @@ input {
 
 input{
     font-weight: bold;
+}
+
+header{
+    background-color: #072B61;
+    color: #E9ECF8;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+main{
+    margin-top: 8em;
+}
+
+footer{
+    text-align: center;
 }
