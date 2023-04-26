@@ -5,17 +5,17 @@
 
 body {
     background-color: #F3F5FC;
+    display: grid;
     margin: 0;
+
    
 }
 
-#logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-   
-}
 
+main{
+    padding: 10px;
+    margin-bottom: 2em;
+}
 
 a,
 button,
@@ -89,10 +89,7 @@ input {
     text-align: center;
 }
 
-#logo {
-    width: 10%;
-    height: 10%;
-}
+
 
 #indice{
     text-align: center;
@@ -105,16 +102,21 @@ input{
 header{
     background-color: #072B61;
     color: #E9ECF8;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    width: 100%;  
+    
 }
 
-main{
-    margin-top: 8em;
-}
+
 
 footer{
+   
+    background-color: #052051;
+    color: #F3F5FC;
     text-align: center;
+    
+}
+
+img{
+    width: 20%;    
+   
 }

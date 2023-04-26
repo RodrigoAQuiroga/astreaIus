@@ -1,24 +1,26 @@
 * {
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
 }
 
 body {
     background-color: #F3F5FC;
-}
-
-#confirmar {
-    padding: 10px;
-
+    padding: 5px;
 
 }
+
+
 
 main{
     margin-bottom: 10em;
 
 }
 
-
+.botones{
+    padding: 10px;
+    font-size: 16px;
+}
 a,
 button,
 summary {
@@ -46,23 +48,24 @@ input {
 .index {
     position: fixed;
     bottom: 0;
-    background-color: #757FB2;
+    background-color: #356EA9;
     padding: 10px;
    border-radius: 5px;
     right: 0;
     text-align: right;
 }
 
+#inputs{
+    background-color: #356EA9;
+    color: #F3F5FC;
+    padding: 10px;
+}
+
 
 input{
     font-weight: bold;
 }
-.found {
-    font-weight: bolder;
-    background-color: #AAB2D5;
-    padding: 5px;
-    border-radius: 5px;
-}
+
 
 #indice {
     display: none;
@@ -82,24 +85,11 @@ input{
     border-radius: 5px 20px;
 }
 
-#link,
-#linkCpc,
-#linkConcursos {
-    display: block;
-    background-color: #052051;
-    text-align: center;
 
-}
 
 .buscador {
     text-align: center;
 }
 
-#presentacion {
-    text-align: center;
-}
 
-#logo {
-    width: 20%;
-    height: 20%;
-}
+
