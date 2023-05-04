@@ -88,7 +88,8 @@ input{
 
 #link,
 #linkCpc,
-#linkConcursos {
+#linkConcursos, 
+#linkLct {
     display: block;
     background-color: #052051;
     text-align: center;
