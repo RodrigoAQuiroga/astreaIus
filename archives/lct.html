@@ -4880,7 +4880,9 @@
 
             enlace.setAttribute("href", "#artLct" + number);
 
-            enlace.innerText = "Buscar art. " + number;
+            enlace.innerHTML = "Buscar art. " + "<b> <i>" + number +"</i> </b>";
+
+            enlace.style.backgroundColor = "green";
 
             resaltar.setAttribute("class", "found");
 

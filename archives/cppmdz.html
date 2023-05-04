@@ -34,6 +34,7 @@
       <a href="https://rodrigoaquiroga.github.io/astreaIus/">Inicio</a>  
       <a href="ccyc.html">Código Civil y Comercial</a>
             <a href="cpn.html">Código Penal Nacional</a>
+            <a href="lct.html">Ley Contrato de Trabajo</a>
             <a href="cpl.html">Código Procesal Laboral de Mendoza</a>
             <a href="cppmdz.html">Código Procesal Penal de Mendoza</a>            
             <a href="concursos.html">Ley Concursos y Quiebras</a>
@@ -8012,7 +8013,9 @@ let confirmar = document.getElementById("btnBuscar");
 
 enlace.setAttribute("href", "#art" + number);
 
-enlace.innerText = "Buscar art. " + number;
+enlace.innerHTML = "Buscar art. " + "<b> <i>" + number +"</i> </b>";
+
+enlace.style.backgroundColor = "green";
 
 resaltar.setAttribute("class", "found");
 
