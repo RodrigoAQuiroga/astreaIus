@@ -86,10 +86,7 @@ input{
     border-radius: 5px 20px;
 }
 
-#link,
-#linkCpc,
-#linkConcursos, 
-#linkLct {
+#link {
     display: block;
     background-color: #052051;
     text-align: center;

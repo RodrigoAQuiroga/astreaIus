@@ -7998,32 +7998,6 @@ x.setAttribute("id", "art" + index)
 }
 
 
-
-
-
-function buscar() {
-
-let number = parseInt(document.querySelector(".buscar").value);
-
-let enlace = document.getElementById("link");
-
-let resaltar = document.getElementById(("art" + number));
-
-let confirmar = document.getElementById("btnBuscar");
-
-enlace.setAttribute("href", "#art" + number);
-
-enlace.innerHTML = "Buscar art. " + "<b> <i>" + number +"</i> </b>";
-
-enlace.style.backgroundColor = "green";
-
-resaltar.setAttribute("class", "found");
-
-console.log(number);
-
-}
-
-
 </script>
 </body>
 

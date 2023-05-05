@@ -23,7 +23,7 @@
         <a href="#ccyc" class="top">Al inicio</a>
 
         <div id="indice">
-            <a href="https://rodrigoaquiroga.github.io/astreaIus/">Inicio</a>
+            <a href="/index.html">Inicio</a>
             <a href="ccyc.html">Código Civil y Comercial</a>
             <a href="cpn.html">Código Penal Nacional</a>
             <a href="lct.html">Ley Contrato de Trabajo</a>
@@ -31,6 +31,7 @@
             <a href="cppmdz.html">Código Procesal Penal de Mendoza</a>
             <a href="concursos.html">Ley Concursos y Quiebras</a>
             <a href="cpcct.html">CPCCT de Mendoza</a>
+            <a href="/apps/calculadora.html">Calculadora</a>
 
 
         </div>
@@ -35992,27 +35993,7 @@
 
 
 
-        function buscar() {
-
-            let number = parseInt(document.querySelector(".buscar").value);
-
-            let enlace = document.getElementById("link");
-
-            let resaltar = document.getElementById(("art" + number));
-
-            let confirmar = document.getElementById("btnBuscar");
-
-            enlace.setAttribute("href", "#art" + number);
-
-            enlace.innerHTML = "Buscar art. " + "<b> <i>" + number + "</i> </b>";
-
-            enlace.style.backgroundColor = "green";
-
-            resaltar.setAttribute("class", "found");
-
-            console.log(number);
-
-        }
+        
 
 
     </script>
