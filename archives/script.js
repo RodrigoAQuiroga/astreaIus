@@ -19,9 +19,7 @@ function buscar() {
 
     let enlace = document.getElementById("link");
 
-    let resaltar = document.getElementById(("art" + number));
-
-    let confirmar = document.getElementById("btnBuscar");
+    let resaltar = document.getElementById(("art" + number));    
 
     enlace.setAttribute("href", "#art" + number);
 
@@ -36,7 +34,15 @@ function buscar() {
 }
 
 
+function reset (){
 
+    let enlace = document.getElementById("link");
+
+    enlace.style.backgroundColor = "#0A3871";
+
+    enlace.innerHTML ="Ingrese el número del artículo a buscar";
+
+}
 
 
 
