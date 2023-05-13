@@ -6,15 +6,17 @@
 body {
     background-color: #F3F5FC;
     display: grid;
+    grid-template-rows: auto auto auto;
     margin: 0;
 
-   
+
 }
 
 
-main{
+
+main {
     padding: 10px;
-    margin-bottom: 2em;
+
 }
 
 a,
@@ -30,58 +32,10 @@ summary {
     border-width: none;
     border-style: none;
     cursor: pointer;
-}
-
-input {
-    background-color: #E9ECF8;
-    border-style: none;
-    padding: 10px;
-}
-
-.index {
-    position: fixed;
-    bottom: 0;
-    background-color: #757FB2;
-    padding: 10px;
-    width: 100%;
-    left: 0;
-    text-align: right;
-}
-
-
-
-.found {
-    font-weight: bolder;
-    background-color: #AAB2D5;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-
-
-.botonMostrar {
-    background-color: #072B61;
-    border: none;
-    color: white;
-    padding: 15px;
     text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px 20px;
 }
 
-#link,
-#linkCpc,
-#linkConcursos {
-    display: block;
-    background-color: #052051;
-    text-align: center;
-
-}
-
-.buscador {
+h3 {
     text-align: center;
 }
 
@@ -91,32 +45,57 @@ input {
 
 
 
-#indice{
+#indice {
     text-align: center;
+    overflow: auto;
 }
 
-input{
-    font-weight: bold;
+#leyes {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 5px;
 }
 
-header{
+#doctrina {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 5px;
+}
+
+header {
     background-color: #072B61;
     color: #E9ECF8;
-    width: 100%;  
-    
+    width: 100%;
+
 }
 
+footer {
 
-
-footer{
-   
     background-color: #052051;
     color: #F3F5FC;
-    text-align: center;
-    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
+    grid-auto-rows: auto;
+    grid-auto-flow: dense;
+    gap: 10px;
+    align-content: center;
+
 }
 
-img{
-    width: 20%;    
-   
+img {
+    width: 20vw;
+    margin: auto;
+    padding: 10px;
+}
+
+#info {
+    margin: auto;
+    padding: 10px;
+
 }
