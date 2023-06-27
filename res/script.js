@@ -1,4 +1,11 @@
 
+function arts(x){
+    for (let index = 1; index <= x; index++) {
+        let x = document.getElementById("art")
+        x.setAttribute("id", "art" + index)
+    }
+}
+
 function mostrar(y, z) {
     var x = document.getElementById(y);
     var boton = document.getElementById(z)
