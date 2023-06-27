@@ -2,83 +2,118 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js"></script>
-
-
-    <title>AstreaIus_Codex</title>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstreaIus: Codex_Ar</title>
+  <script src="scripts/menu.js"></script>
+  <script src="scripts/script.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
+  <header>
+    <h1>AstreaIus: Codex_Ar</h1>
+    <h2>Digesto, Doctrina y Software Jurídico</h2>
+    <nav id="pages">
 
-    <header id="presentacion">
+      <ul>
+        <li><a href="pages/about.html">Información Contacto y Sugerencias</a></li>
 
-        <h1>Bienvenido a AstreaIus : Codex_Lex</h1>
+      </ul>
 
-    </header>
-    <main>
-        <h3>Legislación</h3>
-        <article id="leyes">
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h3>Constitución Nacional y Tratados Internacionales</h3>
+      <input type="text" id="myInput" onkeyup="myFunction('myInput', 'myUL')" placeholder="Filtrar por nombre...">
 
-            <a href="archives/cn.html">Constitución Nacional</a>
-            <a href="archives/ccyc.html">Código Civil y Comercial</a>
-            <a href="archives/cpn.html">Código Penal Nacional</a>
-            <a href="archives/lct.html">Ley de Contrato de Trabajo</a>
-            <a href="archives/ldc.html">Ley de Defensa del Consumidor</a>
-            <a href="archives/cpl.html">Código Procesal Laboral de Mendoza</a>
-            <a href="archives/cppmdz.html">Código Procesal Penal de Mendoza</a>
-            <a href="archives/concursos.html">Ley Concursos y Quiebras</a>
-            <a href="archives/cpcct.html">Código Procesal Civil Tributario de Mendoza</a>
-        </article>
-        <hr>
-        <h3>Doctrina</h3>
-        <article id="doctrina">
+      <ul id="myUL">
+        <li><a href="res/cn.html">Constitución Nacional</a></li>
+        <li><a href="res/cpmdz.html">Constitución Provincial - Mdz</a></li>
+        <li><a href="res/dadh.html">Declaración Americana de los Derechos y Deberes del Hombre</a></li>
 
-            <a href="archives/dpnc.html">Derecho Penal Neurocriminal</a>
-            <a href="https://drive.google.com/file/d/14ALDCoDZWr0Lm-BlaxhmnpeRS2MeBjFq/preview">Defraudaciones: Código
-                Penal Nacional</a>
-            <a href="https://drive.google.com/file/d/1oKdZQkvOXkWmhrU34gAvt2Ekn_0ncoIJ/preview">Homicidio: Código Penal
-                Nacional</a>
-            <a href="https://drive.google.com/file/d/1q0Ah2P3CvcX9f7xQKb02gqOwChNsM5kO/preview">Ensayo de Respuesta al
-                Delito: Investigación</a>
-            <a href="https://drive.google.com/file/d/1i8xF9AFIhN2lA9e7CQmIlpyzm9srZhqN/preview">Crítica al Sistema
-                Penal: Investigación</a>
-            <a href="https://drive.google.com/file/d/1dXAn-d2mggsQo0XtRyLFPhkMhTqPPApA/preview">Esquema de imputación:
-                Investigación</a>
+        <li><a href="res/dudh.html">Declaración Universal de Derechos Humanos</a></li>
+        <li><a href="res/cadh.html">Convención Americana sobre Derechos Humanos</a></li>
+        <li><a href="res/pidces.html">Pacto Internacional de Derechos Económicos, Sociales y Culturales</a></li>
+        <li><a href="res/pidcyp.html">Pacto Internacional de Derechos Civiles y Políticos y su Protocolo Facultativo</a>
+        </li>
+        <li><a href="res/cpesg.html">Convención sobre la Prevención y la Sanción del Delito de Genocidio</a></li>
+        <li><a href="res/cdr.html">Convención Internacional sobre la Eliminación de todas las Formas de Discriminación
+            Racial</a>
+        </li>
+        <li><a href="res/cedm.html">Convención sobre la Eliminación de todas las Formas de Discriminación contra la
+            Mujer</a></li>
+        <li><a href="res/ccptti.html">Convención contra la Tortura y otros Tratos o Penas Crueles, Inhumanos o
+            Degradantes</a></li>
+        <li><a href="res/cudn.html">Convención sobre los Derechos del Niño</a></li>
+      </ul>
 
-        </article>
+      <hr>
 
-        <hr>
-        <h3>Software Jurídico</h3>
-        <article id="software">
+      <h3>Códigos Nacionales y Provinciales</h3>
 
-            <a href="apps/calculadora.html">Calculadora: Liquidación Final</a>
-        </article>
+      <input type="text" id="myInput1" onkeyup="myFunction('myInput1', 'myUL1')" placeholder="Filtrar por nombre...">
 
+      <ul id="myUL1">
+        <li><a href="res/ccyc.html">Código Civil y Comercial</a></li>
+        <li><a href="res/cpn.html">Código Penal Nacional</a></li>
+        <li><a href="res/cpcct.html">Código Procesal Civil, Comercial y Tributario - Mdz</a></li>
+        <li><a href="res/cppmdz.html">Código Procesal Penal - Mdz</a></li>
+        <li><a href="res/cpl.html">Código Procesal Laboral - Mdz</a></li>
+      </ul>
 
-    </main>
+      <hr>
+      <h3>Leyes Nacionales y Provinciales</h3>
+      <input type="text" id="myInput2" onkeyup="myFunction('myInput2', 'myUL2')" placeholder="Filtrar por nombre...">
+      <ul id="myUL2">
+        <li><a href="res/ldc.html">Ley de Defensa del Consumidor</a></li>
+        <li><a href="res/concursos.html">Ley de Concursos y Quiebras</a></li>
+        <li><a href="res/lct.html">Ley de Contrato de Trabajo</a></li>
+        <li><a href="res/lpamdz.html">Ley de Procedimiento Administrativo - Mdz</a></li>
+      </ul>
+    </article>
+    <hr>
+    <h3>Doctrina y Reflexiones</h3>
+    <article id="doctrina">
 
-    <footer>        
-        <img src="res/DepedJca1.png" alt="logo">
-        <div id="info">
-            <h3>Información Legal</h3>
-            <p><i><b> RodrigoAQuiroga/astreaIus is licensed under the GNU Affero General Public License v3.0</b></i></p>
-            <p><b><i>Autor: Quiroga Rodrigo Alberto</i></b></p>
-            <p><b><i>Mail to: astreaspicaiijc@gmail.com</i></b></p>
-            <p><b><i>Ver. 25.4.23.3</i></b></p>
-        </div>
+      <ul>
 
-    </footer>
+        <li><a href="archives/dpnc.html">Derecho Penal Neurocriminal</a></li>
+        <li><a href="https://drive.google.com/file/d/14ALDCoDZWr0Lm-BlaxhmnpeRS2MeBjFq/preview">Defraudaciones: Código
+            Penal Nacional</a></li>
+        <li><a href="https://drive.google.com/file/d/1oKdZQkvOXkWmhrU34gAvt2Ekn_0ncoIJ/preview">Homicidio: Código Penal
+            Nacional</a></li>
+        <li><a href="https://drive.google.com/file/d/1q0Ah2P3CvcX9f7xQKb02gqOwChNsM5kO/preview">Ensayo de Respuesta al
+            Delito: Investigación</a></li>
+        <li><a href="https://drive.google.com/file/d/1i8xF9AFIhN2lA9e7CQmIlpyzm9srZhqN/preview">Crítica al Sistema
+            Penal: Investigación</a></li>
+        <li><a href="https://drive.google.com/file/d/1dXAn-d2mggsQo0XtRyLFPhkMhTqPPApA/preview">Esquema de imputación:
+            Investigación</a></li>
 
+      </ul>
 
+    </article>
 
+    <hr>
+    <h3>Software Jurídico</h3>
+    <article id="software">
 
-
-
+      <ul>
+        <li><a href="apps/calculadora.html">Calculadora: Liquidación Final</a></li>
+      </ul>      
+    </article>
+  </main>
+  <footer>
+    <div id="info">
+      <h3>Información Legal</h3>
+      <p>RodrigoAQuiroga/astreaIus is licensed under the GNU Affero General Public License v3.0</p>
+      <p>Autor: Quiroga Rodrigo Alberto</p>
+      <p>Contacto: institutoastreaspica@gmail.com</p>
+      <p>Ver. 26.6.23_4</p>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -5,6 +5,8 @@
 
 body {
     background-color: #F3F5FC;
+    margin: 0;
+
 }
 
 #confirmar {
@@ -14,19 +16,38 @@ body {
 
 }
 
-main{
+main {
     margin-bottom: 10em;
-    padding: 10px;
+    padding: 15px;
 
 }
 
-p{
+h3,
+h2 {
+    text-align: center;
+}
+
+p {
     text-align: justify;
 }
+
+summary{
+
+    padding: 15px 8px;
+    background-color: #0A3871;
+    border-radius: 10px;
+    
+    color: #F3F5FC;
+    text-decoration: none;
+    border-width: none;
+    border-style: none;
+    cursor: pointer;
+
+}
+
 a,
-button,
-summary {
-    padding: 5px 8px;
+button{
+    padding: 15px 8px;
     background-color: #0A3871;
     border-radius: 5px;
     margin: 5px;
@@ -36,31 +57,59 @@ summary {
     border-width: none;
     border-style: none;
     cursor: pointer;
+    text-align: center;
+
 }
+
+details {
+    text-align: center;
+    background-color: #062141;
+    border-radius: 10px;
+}
+
+a:hover {
+    background-color: #062141;
+}
+
 
 input {
     background-color: #E9ECF8;
     border-style: none;
     padding: 10px;
 }
-.top{
+#home{
+    width: 100%;
+    text-align: center;
+}
+/*.top{
     padding: 10px;
     background-color: #072B61;
-}
-.index {
+}*/
+
+
+.top {
     position: fixed;
     bottom: 0;
-    background-color: #356EA9;
-    padding: 10px;
-   border-radius: 5px;
+    background-color: #062141;    
+    padding: 20px;
+    border-radius: 5px;
     right: 0;
     text-align: right;
+    margin: 20px;
+    border-radius: 20px 5px;
 }
 
+.index{
+    background-color: #062141;
+    padding: 20px;
+    text-align: center;
+    
+}
 
-input{
+input {
     font-weight: bold;
 }
+
 .found {
     font-weight: bolder;
     background-color: #AAB2D5;
@@ -70,6 +119,7 @@ input{
 
 #indice {
     display: none;
+
 }
 
 
@@ -83,12 +133,23 @@ input{
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 5px 20px;
+    width: 100%;
+    border-radius: 20px 5px;
+    font-weight: bolder;
+   
 }
+
+
+
+button:hover, summary:hover {
+    background-color: #062141;
+}
+
 
 #link {
     display: block;
-    background-color: #052051;
+    background-color: #062141;
+    ;
     text-align: center;
 
 }
@@ -106,9 +167,18 @@ input{
     height: 20%;
 }
 
-header{
+header {
     background-color: #072B61;
     color: #E9ECF8;
-    padding: 10px;    
-    border-radius: 20px 5px;
+    padding: 10px;
+    
+    
+}
+
+
+hr{
+    width: 50%;
+    background-color: #0A3871;
+    height: 10px;
+    border-radius: 5px;
 }

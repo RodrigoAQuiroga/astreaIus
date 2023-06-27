@@ -1,101 +1,109 @@
-* {
+*{
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+}
+body{
+    margin: 0; 
+    background-color: #e9ecf8;
+    color: #062141; 
+    
 }
 
-body {
-    background-color: #F3F5FC;
-    display: grid;
-    grid-template-rows: auto auto auto;
-    margin: 0;
 
 
+li:hover{
+    background-color: #062141;
 }
-
-
-
-main {
-    padding: 10px;
-
-}
-
-a,
-button,
-summary {
-    padding: 5px 8px;
+#pages li{
     background-color: #0A3871;
-    border-radius: 5px;
-    margin: 5px;
-    display: inline-grid;
+
+}
+#pages li:hover{
+    background-color: #062141;
+}
+
+
+header, footer{
+    text-align: center;
+    background-color: #062141;
+    padding: 5px;  
+}
+
+h1, h2{
+    font-weight: bolder;
     color: #F3F5FC;
-    text-decoration: none;
-    border-width: none;
-    border-style: none;
-    cursor: pointer;
-    text-align: center;
 }
 
-h3 {
-    text-align: center;
+h3{
+   color:#062141
 }
 
-#presentacion {
-    text-align: center;
+footer *{
+    color: #f3f5fc;
+    
 }
 
-
-
-#indice {
-    text-align: center;
-    overflow: auto;
+main{
+    text-align: center;  
+    padding: 10px;
 }
 
-#leyes {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    grid-auto-rows: auto;
-    grid-auto-flow: dense;
-    gap: 5px;
+#pages *{    
+    display: inline-block;
+    padding: 10px;
+    font-weight: bolder;
+    
 }
 
-#doctrina {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    grid-auto-rows: auto;
-    grid-auto-flow: dense;
-    gap: 5px;
-}
-
-header {
-    background-color: #072B61;
-    color: #E9ECF8;
+iframe{
     width: 100%;
-
 }
 
-footer {
-
-    background-color: #052051;
-    color: #F3F5FC;
+ul{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 1fr));
-    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 25rem), 2fr));
+    grid-auto-rows: auto auto auto;
     grid-auto-flow: dense;
     gap: 10px;
-    align-content: center;
-
+    padding: 20px;
+    
+    
 }
-
-img {
-    width: 20vw;
-    margin: auto;
+li{
+    list-style: none;
+    background-color: #0A3871;    
+    display: inline-block;
+    margin-top: 5px;
+    padding: 15px;
+    color: #F3F5FC;
+    font-weight: normal;
+    
+   
+    border-radius: 10px 5px;
+}
+input{
     padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #f3f5fc;  
+    
+}
+a{
+    color: #e9ecf8;
+    text-decoration: none;
+    font-weight: normal;
+    padding: 20px;   
 }
 
-#info {
-    margin: auto;
-    padding: 10px;
 
+
+hr{
+    width: 50%;
+    background-color: #0A3871;
+    height: 10px;
+    border-radius: 5px;
 }
+
