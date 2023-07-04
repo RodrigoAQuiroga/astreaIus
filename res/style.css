@@ -66,6 +66,7 @@ details {
     text-align: center;
     background-color: #062141;
     border-radius: 10px;
+    color: #F3F5FC;   
 }
 
 a:hover {
@@ -87,6 +88,9 @@ input {
     background-color: #072B61;
 }*/
 
+article{
+    padding: 20px;
+}
 
 .top {
     position: fixed;
